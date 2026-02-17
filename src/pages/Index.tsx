@@ -123,7 +123,7 @@ const Index = () => {
           
           {/* E-Book Label */}
           <p className="text-center text-[11px] mt-3" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-            E-Book By Sarah Jenkins (PDF)
+            Complete E-Book (PDF)
           </p>
         </div>
 
