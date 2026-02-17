@@ -27,7 +27,7 @@ const Index = () => {
           <div className="flex -space-x-2">
             <div className="w-7 h-7 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" 
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
                 alt="Reader" 
                 className="w-full h-full object-cover"
               />
