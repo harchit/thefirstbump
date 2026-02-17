@@ -122,7 +122,7 @@ const Index = () => {
           </div>
           
           {/* E-Book Label */}
-          <p className="text-center text-[11px] mt-3" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+          <p className="text-center text-[14px] mt-3" style={{ color: '#ffffff' }}>
             Complete E-Book (PDF)
           </p>
         </div>
@@ -131,15 +131,15 @@ const Index = () => {
         <div className="space-y-0 mb-5">
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
-            <span className="italic text-[13px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
+            <span className="italic text-[15px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
           </div>
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
-            <span className="italic text-[13px]" style={{ color: '#ffffff' }}>No subscriptions</span>
+            <span className="italic text-[15px]" style={{ color: '#ffffff' }}>No subscriptions</span>
           </div>
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
-            <span className="italic text-[13px]" style={{ color: '#ffffff' }}>Read at your own pace</span>
+            <span className="italic text-[15px]" style={{ color: '#ffffff' }}>Read at your own pace</span>
           </div>
         </div>
 
