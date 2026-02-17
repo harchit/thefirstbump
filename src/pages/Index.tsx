@@ -128,7 +128,7 @@ const Index = () => {
         </div>
 
         {/* Benefits List */}
-        <div className="space-y-1.5 mb-5">
+        <div className="space-y-0.5 mb-5">
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
             <span className="italic text-[13px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
