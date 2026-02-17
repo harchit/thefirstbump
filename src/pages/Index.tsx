@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#c9a87c' }}>
-      {/* Background - Misty Lake Scene with Mountains */}
-      <div 
+      {/* Background - Soft Nursery/Pregnancy Scene */}
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2070&auto=format&fit=crop')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=2070&auto=format&fit=crop')`,
         }}
       />
       
@@ -41,20 +41,19 @@ const Index = () => {
             </div>
           </div>
           <span className="text-sm" style={{ color: '#5a4a35' }}>
-            Trusted by <span className="font-semibold" style={{ color: '#8b6914' }}>7,500+ readers worldwide</span>
+            Trusted by <span className="font-semibold" style={{ color: '#8b6914' }}>7,500+ moms worldwide</span>
           </span>
         </div>
 
         {/* Main Heading */}
         <h1 className="text-center mb-1">
           <span className="text-[28px] font-bold block" style={{ color: '#3d3225' }}>The First Bump</span>
-          <span className="text-[28px] italic block font-serif" style={{ color: '#6b5a3d' }}>Wisdom of Yang</span>
-          <span className="text-[28px] italic block font-serif" style={{ color: '#6b5a3d' }}>Mun</span>
+          <span className="text-[28px] italic block" style={{ color: '#6b5a3d', fontFamily: "'Playfair Display', serif" }}>A First Timer's Pregnancy Guide</span>
         </h1>
 
         {/* Subheading */}
         <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-tight" style={{ color: '#4a3f2f' }}>
-          Feel Better Now: Treating Mind & Body Ailments With Chinese Medicine
+          Everything you need to know about your first pregnancy journey.
         </p>
 
         {/* Book Image Container */}
@@ -95,9 +94,9 @@ const Index = () => {
                       border: '1px solid rgba(160, 140, 100, 0.3)'
                     }}
                   >
-                    <img 
-                      src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=250&fit=crop" 
-                      alt="Meditation scene" 
+                    <img
+                      src="https://images.unsplash.com/photo-1559734840-f9509ee5677f?w=200&h=250&fit=crop"
+                      alt="Pregnancy"
                       className="w-full h-full object-cover"
                       style={{ filter: 'sepia(40%) brightness(1.1)' }}
                     />
@@ -106,11 +105,11 @@ const Index = () => {
                 
                 {/* Subtitle */}
                 <div className="text-center mt-1">
-                  <p className="text-[7px] italic leading-tight mb-1" style={{ color: '#6b5a3d' }}>
-                    Treating Mind and Body Illnesses<br />with Chinese Medicine
+                  <p className="text-[7px] italic leading-tight mb-1" style={{ color: '#6b5a3d', fontFamily: "'Playfair Display', serif" }}>
+                    A First Timer's Pregnancy Guide
                   </p>
                   <div className="w-10 h-px mx-auto mb-1" style={{ backgroundColor: '#a08860' }} />
-                  <p className="font-semibold text-[10px] tracking-wide" style={{ color: '#5a4a35' }}>YANG MUN</p>
+                  <p className="font-semibold text-[10px] tracking-wide" style={{ color: '#5a4a35' }}>SARAH JENKINS</p>
                 </div>
               </div>
               
@@ -124,7 +123,7 @@ const Index = () => {
           
           {/* E-Book Label */}
           <p className="text-center text-[11px] mt-3" style={{ color: 'rgba(90, 74, 53, 0.7)' }}>
-            E-Book By Yang Mun (PDF)
+            E-Book By Sarah Jenkins (PDF)
           </p>
         </div>
 
