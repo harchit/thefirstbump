@@ -2,6 +2,8 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+
   return (
     <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#c9a87c' }}>
       {/* Background - Soft Nursery/Pregnancy Scene */}
@@ -157,10 +159,15 @@ const Index = () => {
         {/* Pricing */}
         <div className="text-center mb-3 flex flex-col items-center">
           <div 
-            className="px-8 py-1.5 rounded-full backdrop-blur-md border border-white/20 mb-2"
+            className="px-6 py-1.5 rounded-full backdrop-blur-md border border-white/20 mb-2"
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
           >
-            <p className="text-[32px] font-light leading-none" style={{ color: '#ffffff' }}>$10.99</p>
+            <p 
+              className="text-[32px] font-light leading-none" 
+              style={{ color: '#ffffff', fontFamily: sfProFont }}
+            >
+              $10.99
+            </p>
           </div>
           <p className="text-[16px] font-medium" style={{ color: '#ffffff' }}>
             Normally <span className="line-through ml-1" style={{ color: '#22c55e' }}>$16.99</span>
