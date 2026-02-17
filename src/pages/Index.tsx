@@ -147,7 +147,7 @@ const Index = () => {
 
         {/* CTA Button */}
         <Button 
-          className="font-semibold px-8 py-2.5 rounded-full text-[13px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
+          className="font-semibold px-10 py-3 rounded-full text-[16px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
           style={{ 
             backgroundColor: '#ffffff',
             color: '#2d2418'
