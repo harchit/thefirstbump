@@ -170,7 +170,7 @@ const Index = () => {
             </p>
           </div>
           <p className="text-[16px] font-medium" style={{ color: '#ffffff' }}>
-            Normally <span className="line-through ml-1" style={{ color: '#22c55e' }}>$16.99</span>
+            Normally <span className="line-through ml-1" style={{ color: '#ef4444' }}>$16.99</span>
           </p>
         </div>
 
