@@ -159,12 +159,27 @@ const Index = () => {
         {/* Pricing */}
         <div className="text-center mb-3 flex flex-col items-center">
           <div 
-            className="px-6 py-1.5 rounded-full backdrop-blur-md border border-white/20 mb-2"
-            style={{ backgroundColor: 'rgba(0, 0, 0, 0.35)' }}
+            className="relative px-8 py-2 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
+            style={{ 
+              backgroundColor: 'rgba(255, 255, 255, 0.25)',
+              boxShadow: '0 8px 32px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.5)',
+            }}
           >
+            {/* Inner glow highlight at top */}
+            <div 
+              className="absolute top-0 left-0 right-0 h-[1px]"
+              style={{
+                background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent)'
+              }}
+            />
+            
             <p 
-              className="text-[32px] font-light leading-none" 
-              style={{ color: '#ffffff', fontFamily: sfProFont }}
+              className="text-[32px] font-bold leading-none relative z-10" 
+              style={{ 
+                color: '#ffffff', 
+                fontFamily: sfProFont,
+                textShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+              }}
             >
               $10.99
             </p>
