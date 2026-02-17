@@ -16,7 +16,7 @@ const Index = () => {
       <div 
         className="absolute inset-0"
         style={{ 
-          background: 'linear-gradient(180deg, rgba(210, 175, 130, 0.85) 0%, rgba(195, 160, 110, 0.75) 30%, rgba(180, 145, 95, 0.7) 60%, rgba(165, 130, 85, 0.8) 100%)'
+          background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.4) 100%)'
         }} 
       />
       
@@ -40,19 +40,19 @@ const Index = () => {
               />
             </div>
           </div>
-          <span className="text-sm" style={{ color: '#5a4a35' }}>
-            Trusted by <span className="font-semibold" style={{ color: '#8b6914' }}>7,500+ moms worldwide</span>
+          <span className="text-sm" style={{ color: '#ffffff' }}>
+            Trusted by <span className="font-semibold">7,500+ moms worldwide</span>
           </span>
         </div>
 
         {/* Main Heading */}
         <h1 className="text-center mb-1">
-          <span className="text-[28px] font-bold block" style={{ color: '#3d3225' }}>The First Bump</span>
-          <span className="text-[28px] italic block" style={{ color: '#6b5a3d', fontFamily: "'Playfair Display', serif" }}>A First Timer's Pregnancy Guide</span>
+          <span className="text-[28px] font-bold block" style={{ color: '#ffffff' }}>The First Bump</span>
+          <span className="text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A First Timer's Pregnancy Guide</span>
         </h1>
 
         {/* Subheading */}
-        <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-tight" style={{ color: '#4a3f2f' }}>
+        <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-tight" style={{ color: '#ffffff' }}>
           Everything you need to know about your first pregnancy journey.
         </p>
 
@@ -63,7 +63,7 @@ const Index = () => {
             {/* Book Shadow */}
             <div 
               className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-36 h-6 rounded-full blur-lg"
-              style={{ backgroundColor: 'rgba(80, 60, 30, 0.3)' }}
+              style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
             />
             
             {/* Book Cover */}
@@ -85,7 +85,7 @@ const Index = () => {
                 {/* Decorative line */}
                 <div className="w-16 h-px mx-auto mb-1" style={{ backgroundColor: '#a08860' }} />
                 
-                {/* Monk/Meditation Image */}
+                {/* Image */}
                 <div className="flex-1 flex items-center justify-center my-1">
                   <div 
                     className="w-[85px] h-[100px] rounded overflow-hidden"
@@ -122,7 +122,7 @@ const Index = () => {
           </div>
           
           {/* E-Book Label */}
-          <p className="text-center text-[11px] mt-3" style={{ color: 'rgba(90, 74, 53, 0.7)' }}>
+          <p className="text-center text-[11px] mt-3" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
             E-Book By Sarah Jenkins (PDF)
           </p>
         </div>
@@ -130,16 +130,16 @@ const Index = () => {
         {/* Benefits List */}
         <div className="space-y-1.5 mb-5">
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4" style={{ color: '#5a4a35' }} strokeWidth={2.5} />
-            <span className="italic text-[13px]" style={{ color: '#4a3f2f' }}>Instant PDF access</span>
+            <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
+            <span className="italic text-[13px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4" style={{ color: '#5a4a35' }} strokeWidth={2.5} />
-            <span className="italic text-[13px]" style={{ color: '#4a3f2f' }}>No subscriptions</span>
+            <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
+            <span className="italic text-[13px]" style={{ color: '#ffffff' }}>No subscriptions</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4" style={{ color: '#5a4a35' }} strokeWidth={2.5} />
-            <span className="italic text-[13px]" style={{ color: '#4a3f2f' }}>Read at your own pace</span>
+            <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
+            <span className="italic text-[13px]" style={{ color: '#ffffff' }}>Read at your own pace</span>
           </div>
         </div>
 
@@ -147,8 +147,8 @@ const Index = () => {
         <Button 
           className="font-semibold px-10 py-5 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border-0"
           style={{ 
-            backgroundColor: '#2d2418',
-            color: '#ffffff'
+            backgroundColor: '#ffffff',
+            color: '#2d2418'
           }}
         >
           Get My Digital Copy
@@ -156,14 +156,14 @@ const Index = () => {
 
         {/* Pricing */}
         <div className="text-center mb-3">
-          <p className="text-[38px] font-bold" style={{ color: '#3d3225' }}>$10.99</p>
-          <p className="text-[13px]" style={{ color: '#6b5a3d' }}>
-            Normally <span className="line-through" style={{ color: '#a08860' }}>$16.99</span>
+          <p className="text-[38px] font-bold" style={{ color: '#ffffff' }}>$10.99</p>
+          <p className="text-[13px]" style={{ color: '#ffffff' }}>
+            Normally <span className="line-through" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>$16.99</span>
           </p>
         </div>
 
         {/* Limited Time Offer */}
-        <p className="text-lg italic font-medium" style={{ color: '#8b6914' }}>
+        <p className="text-lg italic font-medium" style={{ color: '#ffffff' }}>
           Limited-Time Offer- Ends Soon
         </p>
       </div>
