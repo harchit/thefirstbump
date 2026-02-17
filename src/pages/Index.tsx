@@ -53,7 +53,7 @@ const Index = () => {
 
         {/* Subheading */}
         <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-normal" style={{ color: '#ffffff' }}>
-          Everything you need to know about your first pregnancy journey.
+          The No-BS, emotionally validating pregnancy blueprint for your journey into motherhood
         </p>
 
         {/* Book Image Container */}
