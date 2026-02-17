@@ -128,7 +128,7 @@ const Index = () => {
         </div>
 
         {/* Benefits List */}
-        <div className="space-y-0 mb-5">
+        <div className="space-y-0 mb-3">
           <div className="flex items-center gap-2">
             <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
             <span className="italic text-[15px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
@@ -145,7 +145,7 @@ const Index = () => {
 
         {/* CTA Button */}
         <Button 
-          className="font-semibold px-10 py-5 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border-0"
+          className="font-semibold px-10 py-3.5 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
           style={{ 
             backgroundColor: '#ffffff',
             color: '#2d2418'
