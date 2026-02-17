@@ -47,7 +47,7 @@ const Index = () => {
 
         {/* Main Heading */}
         <h1 className="text-center mb-1">
-          <span className="text-[28px] font-bold block" style={{ color: '#3d3225' }}>Time To Heal-The</span>
+          <span className="text-[28px] font-bold block" style={{ color: '#3d3225' }}>The First Bump</span>
           <span className="text-[28px] italic block font-serif" style={{ color: '#6b5a3d' }}>Wisdom of Yang</span>
           <span className="text-[28px] italic block font-serif" style={{ color: '#6b5a3d' }}>Mun</span>
         </h1>
@@ -79,8 +79,8 @@ const Index = () => {
               <div className="p-3 h-full flex flex-col">
                 {/* Title */}
                 <div className="text-center mb-1">
-                  <h3 className="font-bold text-xs tracking-widest" style={{ color: '#5a4a35' }}>TIME TO</h3>
-                  <h3 className="font-bold text-base tracking-wider" style={{ color: '#5a4a35' }}>HEAL</h3>
+                  <h3 className="font-bold text-xs tracking-widest" style={{ color: '#5a4a35' }}>THE FIRST</h3>
+                  <h3 className="font-bold text-base tracking-wider" style={{ color: '#5a4a35' }}>BUMP</h3>
                 </div>
                 
                 {/* Decorative line */}
