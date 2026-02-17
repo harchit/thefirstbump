@@ -155,10 +155,15 @@ const Index = () => {
         </Button>
 
         {/* Pricing */}
-        <div className="text-center mb-3">
-          <p className="text-[38px] font-bold" style={{ color: '#ffffff' }}>$10.99</p>
-          <p className="text-[13px]" style={{ color: '#ffffff' }}>
-            Normally <span className="line-through" style={{ color: 'rgba(255, 255, 255, 0.6)' }}>$16.99</span>
+        <div className="text-center mb-3 flex flex-col items-center">
+          <div 
+            className="px-10 py-2 rounded-full backdrop-blur-md border border-white/20 mb-2"
+            style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
+          >
+            <p className="text-[42px] font-light leading-none" style={{ color: '#ffffff' }}>$10.99</p>
+          </div>
+          <p className="text-[16px] font-medium" style={{ color: '#ffffff' }}>
+            Normally <span className="line-through ml-1" style={{ color: '#10b981' }}>$16.99</span>
           </p>
         </div>
 
