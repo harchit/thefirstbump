@@ -47,7 +47,7 @@ const Index = () => {
 
         {/* Main Heading */}
         <h1 className="text-center mb-1 leading-tight">
-          <span className="text-[32px] font-semibold block" style={{ color: '#ffffff' }}>The First Bump</span>
+          <span className="text-[32px] font-medium block" style={{ color: '#ffffff' }}>The First Bump</span>
           <span className="text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A First Timer's Pregnancy Guide</span>
         </h1>
 
