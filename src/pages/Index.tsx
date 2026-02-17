@@ -46,13 +46,13 @@ const Index = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-center mb-1 leading-[0.9]">
+        <h1 className="text-center mb-1 leading-tight">
           <span className="text-[28px] font-bold block" style={{ color: '#ffffff' }}>The First Bump</span>
           <span className="text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A First Timer's Pregnancy Guide</span>
         </h1>
 
         {/* Subheading */}
-        <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-tight" style={{ color: '#ffffff' }}>
+        <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-normal" style={{ color: '#ffffff' }}>
           Everything you need to know about your first pregnancy journey.
         </p>
 
