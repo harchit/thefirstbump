@@ -160,7 +160,7 @@ const Index = () => {
         <div className="text-center mb-3 flex flex-col items-center">
           <div 
             className="px-6 py-1.5 rounded-full backdrop-blur-md border border-white/20 mb-2"
-            style={{ backgroundColor: 'rgba(255, 255, 255, 0.15)' }}
+            style={{ backgroundColor: 'rgba(0, 0, 0, 0.35)' }}
           >
             <p 
               className="text-[32px] font-light leading-none" 
