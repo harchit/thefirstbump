@@ -145,7 +145,7 @@ const Index = () => {
 
         {/* CTA Button */}
         <Button 
-          className="font-semibold px-10 py-3.5 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
+          className="font-semibold px-8 py-2.5 rounded-full text-[13px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
           style={{ 
             backgroundColor: '#ffffff',
             color: '#2d2418'
@@ -163,7 +163,7 @@ const Index = () => {
             <p className="text-[42px] font-light leading-none" style={{ color: '#ffffff' }}>$10.99</p>
           </div>
           <p className="text-[16px] font-medium" style={{ color: '#ffffff' }}>
-            Normally <span className="line-through ml-1" style={{ color: '#10b981' }}>$16.99</span>
+            Normally <span className="line-through ml-1" style={{ color: '#22c55e' }}>$16.99</span>
           </p>
         </div>
 
