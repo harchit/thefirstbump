@@ -1,17 +1,173 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-import { MadeWithDyad } from "@/components/made-with-dyad";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
+    <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#c9a87c' }}>
+      {/* Background - Misty Lake Scene with Mountains */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?q=80&w=2070&auto=format&fit=crop')`,
+        }}
+      />
+      
+      {/* Warm Golden/Sepia Overlay */}
+      <div 
+        className="absolute inset-0"
+        style={{ 
+          background: 'linear-gradient(180deg, rgba(210, 175, 130, 0.85) 0%, rgba(195, 160, 110, 0.75) 30%, rgba(180, 145, 95, 0.7) 60%, rgba(165, 130, 85, 0.8) 100%)'
+        }} 
+      />
+      
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center px-5 py-6 min-h-screen">
+        {/* Trust Badge */}
+        <div className="flex items-center gap-2 mb-5">
+          <div className="flex -space-x-2">
+            <div className="w-7 h-7 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" 
+                alt="Reader" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="w-7 h-7 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
+              <img 
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
+                alt="Reader" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <span className="text-sm" style={{ color: '#5a4a35' }}>
+            Trusted by <span className="font-semibold" style={{ color: '#8b6914' }}>7,500+ readers worldwide</span>
+          </span>
+        </div>
+
+        {/* Main Heading */}
+        <h1 className="text-center mb-1">
+          <span className="text-[28px] font-bold block" style={{ color: '#3d3225' }}>Time To Heal-The</span>
+          <span className="text-[28px] italic block font-serif" style={{ color: '#6b5a3d' }}>Wisdom of Yang</span>
+          <span className="text-[28px] italic block font-serif" style={{ color: '#6b5a3d' }}>Mun</span>
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-tight" style={{ color: '#4a3f2f' }}>
+          Feel Better Now: Treating Mind & Body Ailments With Chinese Medicine
+        </p>
+
+        {/* Book Image Container */}
+        <div className="relative mb-4">
+          {/* Book with 3D effect */}
+          <div className="relative" style={{ transform: 'perspective(1000px) rotateY(-5deg)' }}>
+            {/* Book Shadow */}
+            <div 
+              className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-36 h-6 rounded-full blur-lg"
+              style={{ backgroundColor: 'rgba(80, 60, 30, 0.3)' }}
+            />
+            
+            {/* Book Cover */}
+            <div 
+              className="relative w-40 h-56 rounded-md overflow-hidden shadow-xl"
+              style={{ 
+                background: 'linear-gradient(135deg, #e8dcc8 0%, #d4c4a8 50%, #c9b898 100%)',
+                border: '1px solid rgba(180, 160, 120, 0.5)'
+              }}
+            >
+              {/* Book Inner Content */}
+              <div className="p-3 h-full flex flex-col">
+                {/* Title */}
+                <div className="text-center mb-1">
+                  <h3 className="font-bold text-xs tracking-widest" style={{ color: '#5a4a35' }}>TIME TO</h3>
+                  <h3 className="font-bold text-base tracking-wider" style={{ color: '#5a4a35' }}>HEAL</h3>
+                </div>
+                
+                {/* Decorative line */}
+                <div className="w-16 h-px mx-auto mb-1" style={{ backgroundColor: '#a08860' }} />
+                
+                {/* Monk/Meditation Image */}
+                <div className="flex-1 flex items-center justify-center my-1">
+                  <div 
+                    className="w-[85px] h-[100px] rounded overflow-hidden"
+                    style={{ 
+                      boxShadow: 'inset 0 0 10px rgba(0,0,0,0.1)',
+                      border: '1px solid rgba(160, 140, 100, 0.3)'
+                    }}
+                  >
+                    <img 
+                      src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=250&fit=crop" 
+                      alt="Meditation scene" 
+                      className="w-full h-full object-cover"
+                      style={{ filter: 'sepia(40%) brightness(1.1)' }}
+                    />
+                  </div>
+                </div>
+                
+                {/* Subtitle */}
+                <div className="text-center mt-1">
+                  <p className="text-[7px] italic leading-tight mb-1" style={{ color: '#6b5a3d' }}>
+                    Treating Mind and Body Illnesses<br />with Chinese Medicine
+                  </p>
+                  <div className="w-10 h-px mx-auto mb-1" style={{ backgroundColor: '#a08860' }} />
+                  <p className="font-semibold text-[10px] tracking-wide" style={{ color: '#5a4a35' }}>YANG MUN</p>
+                </div>
+              </div>
+              
+              {/* Book Spine Effect */}
+              <div 
+                className="absolute left-0 top-0 bottom-0 w-1.5"
+                style={{ background: 'linear-gradient(90deg, rgba(160, 140, 100, 0.6) 0%, transparent 100%)' }}
+              />
+            </div>
+          </div>
+          
+          {/* E-Book Label */}
+          <p className="text-center text-[11px] mt-3" style={{ color: 'rgba(90, 74, 53, 0.7)' }}>
+            E-Book By Yang Mun (PDF)
+          </p>
+        </div>
+
+        {/* Benefits List */}
+        <div className="space-y-1.5 mb-5">
+          <div className="flex items-center gap-2">
+            <Check className="w-4 h-4" style={{ color: '#5a4a35' }} strokeWidth={2.5} />
+            <span className="italic text-[13px]" style={{ color: '#4a3f2f' }}>Instant PDF access</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Check className="w-4 h-4" style={{ color: '#5a4a35' }} strokeWidth={2.5} />
+            <span className="italic text-[13px]" style={{ color: '#4a3f2f' }}>No subscriptions</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Check className="w-4 h-4" style={{ color: '#5a4a35' }} strokeWidth={2.5} />
+            <span className="italic text-[13px]" style={{ color: '#4a3f2f' }}>Read at your own pace</span>
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <Button 
+          className="font-semibold px-10 py-5 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border-0"
+          style={{ 
+            backgroundColor: '#2d2418',
+            color: '#ffffff'
+          }}
+        >
+          Get My Digital Copy
+        </Button>
+
+        {/* Pricing */}
+        <div className="text-center mb-3">
+          <p className="text-[38px] font-bold" style={{ color: '#3d3225' }}>$10.99</p>
+          <p className="text-[13px]" style={{ color: '#6b5a3d' }}>
+            Normally <span className="line-through" style={{ color: '#a08860' }}>$16.99</span>
+          </p>
+        </div>
+
+        {/* Limited Time Offer */}
+        <p className="text-lg italic font-medium" style={{ color: '#8b6914' }}>
+          Limited-Time Offer- Ends Soon
         </p>
       </div>
-      <MadeWithDyad />
     </div>
   );
 };
