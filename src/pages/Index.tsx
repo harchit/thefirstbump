@@ -76,7 +76,7 @@ const Index = () => {
         >
           {/* Book Shadow */}
           <div 
-            className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[38vw] max-w-40 h-8 rounded-full blur-xl"
+            className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[32vw] max-w-36 h-6 rounded-full blur-xl"
             style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
           />
           
@@ -84,7 +84,7 @@ const Index = () => {
           <img
             src="/book-cover.png"
             alt="The First Bump - A New Mom's Pregnancy Guide"
-            className="relative w-[42vw] max-w-44 min-w-32 h-auto drop-shadow-2xl"
+            className="relative w-[35vw] max-w-36 min-w-28 h-auto drop-shadow-2xl"
             style={{
               filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
             }}
