@@ -6,6 +6,7 @@ import JourneySection from "@/components/journey-section";
 import StickyCtaButton from "@/components/sticky-cta-button";
 import ReviewsSection from "@/components/reviews-section";
 import FaqSection from "@/components/faq-section";
+import SlotCounter from "@/components/slot-counter";
 
 const Index = () => {
   const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
@@ -59,7 +60,7 @@ const Index = () => {
               </div>
             </div>
             <span className="text-[3.8vw] sm:text-base" style={{ color: '#ffffff' }}>
-              Trusted by <span className="font-semibold">2,717+ moms worldwide</span>
+              Trusted by <span className="font-semibold"><SlotCounter initialValue={2717} />+ moms worldwide</span>
             </span>
           </div>
 
