@@ -12,7 +12,7 @@ const DiscoverSection = () => {
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
         fontWeight: 300,
         letterSpacing: '-0.02em',
-        lineHeight: '1.4'
+        lineHeight: '1.2'
       }}
     >
       <div className="max-w-md mx-auto">
@@ -21,7 +21,7 @@ const DiscoverSection = () => {
           className="text-4xl sm:text-5xl font-light text-center mb-6"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.2',
+            lineHeight: '1.1',
             letterSpacing: '-0.03em'
           }}
         >
@@ -33,7 +33,7 @@ const DiscoverSection = () => {
           className="text-center text-base sm:text-lg mb-16"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.5',
+            lineHeight: '1.3',
             letterSpacing: '-0.01em'
           }}
         >
@@ -53,7 +53,10 @@ const DiscoverSection = () => {
             </div>
             <h3 
               className="text-lg font-medium mb-2"
-              style={{ color: '#3d4a3a' }}
+              style={{ 
+                color: '#3d4a3a',
+                lineHeight: '1.2'
+              }}
             >
               Trimester-by-Trimester Clarity
             </h3>
@@ -61,7 +64,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.5'
+                lineHeight: '1.3'
               }}
             >
               What's happening in your body, what's normal, and when to pay attention.
@@ -82,7 +85,10 @@ const DiscoverSection = () => {
             </div>
             <h3 
               className="text-lg font-medium mb-2"
-              style={{ color: '#3d4a3a' }}
+              style={{ 
+                color: '#3d4a3a',
+                lineHeight: '1.2'
+              }}
             >
               Emotional Grounding Tools
             </h3>
@@ -90,7 +96,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.5'
+                lineHeight: '1.3'
               }}
             >
               Support for anxiety, mood shifts, and the identity changes of early motherhood.
@@ -108,7 +114,10 @@ const DiscoverSection = () => {
             </div>
             <h3 
               className="text-lg font-medium mb-2"
-              style={{ color: '#3d4a3a' }}
+              style={{ 
+                color: '#3d4a3a',
+                lineHeight: '1.2'
+              }}
             >
               Confident Decision-Making
             </h3>
@@ -116,7 +125,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.5'
+                lineHeight: '1.3'
               }}
             >
               Clear explanations of testing, birth options, and red flags — without fear-based messaging.
@@ -137,7 +146,10 @@ const DiscoverSection = () => {
             </div>
             <h3 
               className="text-lg font-medium mb-2"
-              style={{ color: '#3d4a3a' }}
+              style={{ 
+                color: '#3d4a3a',
+                lineHeight: '1.2'
+              }}
             >
               Practical Preparation
             </h3>
@@ -145,7 +157,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.5'
+                lineHeight: '1.3'
               }}
             >
               What you truly need, how to prepare for labor, and when to call your provider.
@@ -158,7 +170,7 @@ const DiscoverSection = () => {
           className="text-center text-2xl sm:text-3xl font-light mb-8"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.3'
+            lineHeight: '1.2'
           }}
         >
           "When your heart is calm, your baby feels peace."
