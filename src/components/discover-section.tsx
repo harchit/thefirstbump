@@ -21,7 +21,8 @@ const DiscoverSection = () => {
           className="text-4xl sm:text-5xl font-light text-center mb-6"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.2'
+            lineHeight: '1.2',
+            letterSpacing: '-0.03em'
           }}
         >
           What You'll Discover
@@ -32,7 +33,8 @@ const DiscoverSection = () => {
           className="text-center text-base sm:text-lg mb-16"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.5'
+            lineHeight: '1.5',
+            letterSpacing: '-0.01em'
           }}
         >
           Inside, <span className="font-medium">The First Bump</span> shares how to{" "}
