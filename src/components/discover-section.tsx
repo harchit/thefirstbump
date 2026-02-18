@@ -11,7 +11,8 @@ const DiscoverSection = () => {
         background: 'linear-gradient(180deg, #c7c3b4 0%, #ede8df 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
         fontWeight: 300,
-        letterSpacing: '-0.02em'
+        letterSpacing: '-0.02em',
+        lineHeight: '1.4'
       }}
     >
       <div className="max-w-md mx-auto">
@@ -19,7 +20,8 @@ const DiscoverSection = () => {
         <h2 
           className="text-4xl sm:text-5xl font-light text-center mb-6"
           style={{ 
-            color: '#3d4a3a'
+            color: '#3d4a3a',
+            lineHeight: '1.2'
           }}
         >
           What You'll Discover
@@ -27,9 +29,10 @@ const DiscoverSection = () => {
 
         {/* Intro Paragraph */}
         <p 
-          className="text-center text-base sm:text-lg leading-relaxed mb-16"
+          className="text-center text-base sm:text-lg mb-16"
           style={{ 
-            color: '#3d4a3a'
+            color: '#3d4a3a',
+            lineHeight: '1.5'
           }}
         >
           Inside, <span className="font-medium">The First Bump</span> shares how to{" "}
@@ -48,9 +51,10 @@ const DiscoverSection = () => {
               />
             </div>
             <p 
-              className="text-base leading-relaxed max-w-xs"
+              className="text-base max-w-xs"
               style={{ 
-                color: '#3d4a3a'
+                color: '#3d4a3a',
+                lineHeight: '1.5'
               }}
             >
               How to embrace each trimester and create a deeper bond with your baby.
@@ -70,9 +74,10 @@ const DiscoverSection = () => {
               />
             </div>
             <p 
-              className="text-base leading-relaxed max-w-xs"
+              className="text-base max-w-xs"
               style={{ 
-                color: '#3d4a3a'
+                color: '#3d4a3a',
+                lineHeight: '1.5'
               }}
             >
               Gentle self-care practices and emotional tools to calm your mind and nurture your body.
@@ -89,9 +94,10 @@ const DiscoverSection = () => {
               />
             </div>
             <p 
-              className="text-base leading-relaxed max-w-xs"
+              className="text-base max-w-xs"
               style={{ 
-                color: '#3d4a3a'
+                color: '#3d4a3a',
+                lineHeight: '1.5'
               }}
             >
               A nightly routine to help you unwind, release tension, and rest deeply.
@@ -101,9 +107,10 @@ const DiscoverSection = () => {
 
         {/* Quote */}
         <blockquote 
-          className="text-center text-2xl sm:text-3xl font-light leading-snug mb-8"
+          className="text-center text-2xl sm:text-3xl font-light mb-8"
           style={{ 
-            color: '#3d4a3a'
+            color: '#3d4a3a',
+            lineHeight: '1.3'
           }}
         >
           "When your heart is calm, your baby feels peace."
