@@ -33,18 +33,18 @@ const Index = () => {
       />
       
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center px-5 py-6 min-h-screen">
+      <div className="relative z-10 flex flex-col items-center px-4 sm:px-5 py-[4vh] min-h-screen">
         {/* Trust Badge */}
-        <div className="flex items-center gap-2 mb-5">
+        <div className="flex items-center gap-2 mb-[2vh]">
           <div className="flex -space-x-2">
-            <div className="w-7 h-7 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
+            <div className="w-[6vw] h-[6vw] max-w-7 max-h-7 min-w-5 min-h-5 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
               <img 
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
                 alt="Reader" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-7 h-7 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
+            <div className="w-[6vw] h-[6vw] max-w-7 max-h-7 min-w-5 min-h-5 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
               <img 
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
                 alt="Reader" 
@@ -52,31 +52,31 @@ const Index = () => {
               />
             </div>
           </div>
-          <span className="text-sm" style={{ color: '#ffffff' }}>
+          <span className="text-[3.2vw] sm:text-sm" style={{ color: '#ffffff' }}>
             Trusted by <span className="font-semibold">7,500+ moms worldwide</span>
           </span>
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-center mb-1 leading-tight">
-          <span className="text-[32px] font-medium block" style={{ color: '#ffffff' }}>The First Bump</span>
-          <span className="text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A New Mom's Pregnancy Guide</span>
+        <h1 className="text-center mb-1 leading-tight w-[85vw] max-w-[320px]">
+          <span className="text-[8vw] sm:text-[32px] font-medium block" style={{ color: '#ffffff' }}>The First Bump</span>
+          <span className="text-[6.5vw] sm:text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A New Mom's Pregnancy Guide</span>
         </h1>
 
         {/* Subheading */}
-        <p className="text-center font-medium text-[13px] mb-5 max-w-[280px] leading-tight" style={{ color: '#ffffff' }}>
+        <p className="text-center font-medium text-[3.2vw] sm:text-[13px] mb-[2vh] w-[75vw] max-w-[280px] leading-tight" style={{ color: '#ffffff' }}>
           The No-BS, emotionally validating pregnancy blueprint for your journey into motherhood
         </p>
 
         {/* Book Image Container with Slide-Up Animation */}
         <div 
-          className={`relative mb-4 transition-all duration-1000 ease-out ${
+          className={`relative mb-[2vh] transition-all duration-1000 ease-out ${
             isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
           }`}
         >
           {/* Book Shadow */}
           <div 
-            className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-40 h-8 rounded-full blur-xl"
+            className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[38vw] max-w-40 h-8 rounded-full blur-xl"
             style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
           />
           
@@ -84,37 +84,37 @@ const Index = () => {
           <img
             src="/book-cover.png"
             alt="The First Bump - A New Mom's Pregnancy Guide"
-            className="relative w-44 h-auto drop-shadow-2xl"
+            className="relative w-[42vw] max-w-44 min-w-32 h-auto drop-shadow-2xl"
             style={{
               filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
             }}
           />
           
           {/* E-Book Label */}
-          <p className="text-center text-[14px] mt-3" style={{ color: '#ffffff' }}>
+          <p className="text-center text-[3.5vw] sm:text-[14px] mt-[1.5vh]" style={{ color: '#ffffff' }}>
             Complete E-Book (PDF)
           </p>
         </div>
 
         {/* Benefits List */}
-        <div className="space-y-0 mb-3">
+        <div className="space-y-0 mb-[1.5vh]">
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
-            <span className="italic text-[15px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
+            <Check className="w-[4vw] h-[4vw] max-w-4 max-h-4 min-w-3 min-h-3" style={{ color: '#ffffff' }} strokeWidth={2.5} />
+            <span className="italic text-[3.8vw] sm:text-[15px]" style={{ color: '#ffffff' }}>Instant PDF access</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
-            <span className="italic text-[15px]" style={{ color: '#ffffff' }}>No subscriptions</span>
+            <Check className="w-[4vw] h-[4vw] max-w-4 max-h-4 min-w-3 min-h-3" style={{ color: '#ffffff' }} strokeWidth={2.5} />
+            <span className="italic text-[3.8vw] sm:text-[15px]" style={{ color: '#ffffff' }}>No subscriptions</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4" style={{ color: '#ffffff' }} strokeWidth={2.5} />
-            <span className="italic text-[15px]" style={{ color: '#ffffff' }}>Read at your own pace</span>
+            <Check className="w-[4vw] h-[4vw] max-w-4 max-h-4 min-w-3 min-h-3" style={{ color: '#ffffff' }} strokeWidth={2.5} />
+            <span className="italic text-[3.8vw] sm:text-[15px]" style={{ color: '#ffffff' }}>Read at your own pace</span>
           </div>
         </div>
 
         {/* CTA Button */}
         <Button 
-          className="font-semibold px-6 py-2 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
+          className="font-semibold px-[5vw] sm:px-6 py-2 rounded-full text-[3.8vw] sm:text-[15px] shadow-lg mb-[2vh] transition-all duration-300 hover:scale-105 border border-black"
           style={{ 
             backgroundColor: '#ffffff',
             color: '#2d2418'
@@ -124,9 +124,9 @@ const Index = () => {
         </Button>
 
         {/* Pricing */}
-        <div className="text-center mb-3 flex flex-col items-center">
+        <div className="text-center mb-[1.5vh] flex flex-col items-center">
           <div 
-            className="relative px-5 py-2 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
+            className="relative px-[5vw] sm:px-5 py-2 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
             style={{ 
               background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.1) 100%)',
               boxShadow: '0 8px 32px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.5)',
@@ -141,7 +141,7 @@ const Index = () => {
             />
             
             <p 
-              className="text-[32px] font-light leading-none relative z-10" 
+              className="text-[8vw] sm:text-[32px] font-light leading-none relative z-10" 
               style={{ 
                 color: '#ffffff', 
                 fontFamily: sfProFont,
@@ -151,13 +151,13 @@ const Index = () => {
               $10.99
             </p>
           </div>
-          <p className="text-[16px] font-medium" style={{ color: '#ffffff' }}>
+          <p className="text-[4vw] sm:text-[16px] font-medium" style={{ color: '#ffffff' }}>
             Normally <span className="line-through ml-1" style={{ color: '#991b1b' }}>$16.99</span>
           </p>
         </div>
 
         {/* Limited Time Offer */}
-        <p className="text-lg italic font-medium" style={{ color: '#ffffff' }}>
+        <p className="text-[4.5vw] sm:text-lg italic font-medium" style={{ color: '#ffffff' }}>
           Limited-Time Offer- Ends Soon
         </p>
       </div>
