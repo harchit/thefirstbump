@@ -55,32 +55,32 @@ const JourneySection = () => {
 
         {/* Card 1 - Nurturing Your Connection */}
         <div 
-          className="rounded-3xl p-8 text-center"
+          className="rounded-3xl p-5 text-center"
           style={{ 
             backgroundColor: '#e8e6dc'
           }}
         >
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-2">
             <Sparkles 
-              className="w-10 h-10" 
+              className="w-8 h-8" 
               style={{ color: '#3d4a3a' }}
               strokeWidth={1.5}
             />
           </div>
           <h3 
-            className="text-2xl font-normal mb-2"
+            className="text-xl font-normal mb-1"
             style={{ 
               color: '#3d4a3a',
-              lineHeight: '1.3'
+              lineHeight: '1.2'
             }}
           >
             Nurturing Your Connection
           </h3>
           <p 
-            className="text-base"
+            className="text-sm"
             style={{ 
               color: '#3d4a3a',
-              lineHeight: '1.5'
+              lineHeight: '1.3'
             }}
           >
             Deepen the bond with your baby through mindful practices
@@ -89,32 +89,32 @@ const JourneySection = () => {
 
         {/* Card 2 - Embracing Your Transformation */}
         <div 
-          className="rounded-3xl p-8 text-center"
+          className="rounded-3xl p-5 text-center"
           style={{ 
             backgroundColor: '#e8e6dc'
           }}
         >
-          <div className="flex justify-center mb-4">
+          <div className="flex justify-center mb-2">
             <Sun 
-              className="w-10 h-10" 
+              className="w-8 h-8" 
               style={{ color: '#3d4a3a' }}
               strokeWidth={1.5}
             />
           </div>
           <h3 
-            className="text-2xl font-normal mb-2"
+            className="text-xl font-normal mb-1"
             style={{ 
               color: '#3d4a3a',
-              lineHeight: '1.3'
+              lineHeight: '1.2'
             }}
           >
             Embracing Your Transformation
           </h3>
           <p 
-            className="text-base"
+            className="text-sm"
             style={{ 
               color: '#3d4a3a',
-              lineHeight: '1.5'
+              lineHeight: '1.3'
             }}
           >
             Find peace and clarity as you step into motherhood
