@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const DiscoverSection = () => {
   return (
     <div 
-      className="w-full pt-8 pb-16 px-6"
+      className="w-full pt-8 pb-4 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #c7c3b4 0%, #ede8df 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -167,7 +167,7 @@ const DiscoverSection = () => {
 
         {/* Quote */}
         <blockquote 
-          className="text-center text-2xl sm:text-3xl font-light mb-8"
+          className="text-center text-2xl sm:text-3xl font-light mb-4"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.2'
