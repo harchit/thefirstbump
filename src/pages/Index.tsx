@@ -60,7 +60,7 @@ const Index = () => {
         {/* Main Heading */}
         <h1 className="text-center mb-1 leading-tight">
           <span className="text-[32px] font-medium block" style={{ color: '#ffffff' }}>The First Bump</span>
-          <span className="text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A First Timer's Pregnancy Guide</span>
+          <span className="text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A New Mom's Pregnancy Guide</span>
         </h1>
 
         {/* Subheading */}
@@ -83,7 +83,7 @@ const Index = () => {
           {/* Book Cover Image */}
           <img
             src="/book-cover.png"
-            alt="The First Bump - A First Timer's Pregnancy Guide"
+            alt="The First Bump - A New Mom's Pregnancy Guide"
             className="relative w-44 h-auto drop-shadow-2xl"
             style={{
               filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
