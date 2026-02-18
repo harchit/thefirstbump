@@ -68,7 +68,7 @@ const JourneySection = () => {
             />
           </div>
           <h3 
-            className="text-xl font-normal mb-1"
+            className="text-2xl font-normal mb-1"
             style={{ 
               color: '#3d4a3a',
               lineHeight: '1.2'
@@ -77,7 +77,7 @@ const JourneySection = () => {
             Nurturing Your Connection
           </h3>
           <p 
-            className="text-sm"
+            className="text-base"
             style={{ 
               color: '#3d4a3a',
               lineHeight: '1.3'
@@ -102,7 +102,7 @@ const JourneySection = () => {
             />
           </div>
           <h3 
-            className="text-xl font-normal mb-1"
+            className="text-2xl font-normal mb-1"
             style={{ 
               color: '#3d4a3a',
               lineHeight: '1.2'
@@ -111,7 +111,7 @@ const JourneySection = () => {
             Embracing Your Transformation
           </h3>
           <p 
-            className="text-sm"
+            className="text-base"
             style={{ 
               color: '#3d4a3a',
               lineHeight: '1.3'
