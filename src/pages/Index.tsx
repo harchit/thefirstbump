@@ -85,11 +85,7 @@ const Index = () => {
             <img
               src="/book-landing-page-removebg-preview.png"
               alt="The First Bump - A New Mom's Pregnancy Guide"
-              className="relative w-[35vw] max-w-36 min-w-28 h-auto transition-[filter] duration-500 ease-out"
-              style={{
-                filter: isLoaded ? 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))' : 'none',
-                transitionDelay: '500ms'
-              }}
+              className="relative w-[35vw] max-w-36 min-w-28 h-auto"
             />
           </div>
 
