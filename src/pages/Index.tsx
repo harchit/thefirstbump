@@ -72,7 +72,7 @@ const Index = () => {
 
           {/* Subheading */}
           <p className="text-center font-medium text-[3.8vw] sm:text-[15px] mb-[2vh] w-[85vw] max-w-[360px] leading-tight" style={{ color: '#ffffff' }}>
-            An emotionally validating pregnancy blueprint for your journey into motherhood
+            An emotionally validating pregnancy guide for your journey into motherhood
           </p>
 
           {/* Book Image Container with Slide-Up Animation */}
