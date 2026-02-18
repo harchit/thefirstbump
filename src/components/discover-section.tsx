@@ -1,12 +1,11 @@
 "use client";
 
 import { Calendar, Heart, Shield, CheckSquare } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const DiscoverSection = () => {
   return (
     <div 
-      className="w-full pt-8 pb-4 px-6"
+      className="w-full pt-6 pb-3 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #DAE2CB 0%, #EAEEE1 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -18,7 +17,7 @@ const DiscoverSection = () => {
       <div className="max-w-md mx-auto">
         {/* Main Heading */}
         <h2 
-          className="text-4xl sm:text-5xl font-light text-center mb-6"
+          className="text-4xl sm:text-5xl font-light text-center mb-4"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.1',
@@ -30,10 +29,10 @@ const DiscoverSection = () => {
 
         {/* Intro Paragraph */}
         <p 
-          className="text-center text-base sm:text-lg mb-16"
+          className="text-center text-base sm:text-lg mb-8"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.3',
+            lineHeight: '1.25',
             letterSpacing: '-0.01em'
           }}
         >
@@ -41,21 +40,21 @@ const DiscoverSection = () => {
         </p>
 
         {/* Feature Items */}
-        <div className="space-y-14 mb-16">
+        <div className="space-y-6 mb-8">
           {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div className="flex flex-col items-center text-center">
-            <div className="mb-4">
+            <div className="mb-2">
               <Calendar 
-                className="w-16 h-16" 
+                className="w-12 h-12" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-2"
+              className="text-lg font-medium mb-1"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.2'
+                lineHeight: '1.15'
               }}
             >
               Trimester-by-Trimester Clarity
@@ -64,7 +63,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.3'
+                lineHeight: '1.2'
               }}
             >
               What's happening in your body, what's normal, and when to pay attention.
@@ -74,20 +73,20 @@ const DiscoverSection = () => {
           {/* Feature 2 - Emotional Grounding Tools */}
           <div className="flex flex-col items-center text-center">
             <div 
-              className="mb-4 w-16 h-16 rounded-2xl flex items-center justify-center border-2"
+              className="mb-2 w-12 h-12 rounded-xl flex items-center justify-center border-2"
               style={{ borderColor: '#3d4a3a' }}
             >
               <Heart 
-                className="w-8 h-8" 
+                className="w-6 h-6" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-2"
+              className="text-lg font-medium mb-1"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.2'
+                lineHeight: '1.15'
               }}
             >
               Emotional Grounding Tools
@@ -96,7 +95,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.3'
+                lineHeight: '1.2'
               }}
             >
               Support for anxiety, mood shifts, and the identity changes of early motherhood.
@@ -105,18 +104,18 @@ const DiscoverSection = () => {
 
           {/* Feature 3 - Confident Decision-Making */}
           <div className="flex flex-col items-center text-center">
-            <div className="mb-4">
+            <div className="mb-2">
               <Shield 
-                className="w-16 h-16" 
+                className="w-12 h-12" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-2"
+              className="text-lg font-medium mb-1"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.2'
+                lineHeight: '1.15'
               }}
             >
               Confident Decision-Making
@@ -125,7 +124,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.3'
+                lineHeight: '1.2'
               }}
             >
               Clear explanations of testing, birth options, and red flags — without fear-based messaging.
@@ -135,20 +134,20 @@ const DiscoverSection = () => {
           {/* Feature 4 - Practical Preparation */}
           <div className="flex flex-col items-center text-center">
             <div 
-              className="mb-4 w-16 h-16 rounded-2xl flex items-center justify-center border-2"
+              className="mb-2 w-12 h-12 rounded-xl flex items-center justify-center border-2"
               style={{ borderColor: '#3d4a3a' }}
             >
               <CheckSquare 
-                className="w-8 h-8" 
+                className="w-6 h-6" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-2"
+              className="text-lg font-medium mb-1"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.2'
+                lineHeight: '1.15'
               }}
             >
               Practical Preparation
@@ -157,7 +156,7 @@ const DiscoverSection = () => {
               className="text-base max-w-xs"
               style={{ 
                 color: '#3d4a3a',
-                lineHeight: '1.3'
+                lineHeight: '1.2'
               }}
             >
               What you truly need, how to prepare for labor, and when to call your provider.
@@ -167,10 +166,10 @@ const DiscoverSection = () => {
 
         {/* Quote */}
         <blockquote 
-          className="text-center text-2xl sm:text-3xl font-light mb-4"
+          className="text-center text-2xl sm:text-3xl font-light mb-3"
           style={{ 
             color: '#3d4a3a',
-            lineHeight: '1.2'
+            lineHeight: '1.15'
           }}
         >
           "When your heart is calm, your baby feels peace."
