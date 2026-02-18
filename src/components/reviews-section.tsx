@@ -6,31 +6,31 @@ import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
-    text: "I bought this during my first trimester when I was googling every little symptom. This book honestly helped me stop spiraling. It explains what's normal without being dramatic, and I felt calmer after almost every chapter.",
+    text: "I stopped Googling every symptom after reading this. It made me feel calm and informed instead of anxious.",
     author: "Emily R., 29",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   },
   {
-    text: "As a first-time mom, I wanted something evidence-based but not cold or clinical. This struck the perfect balance. The sections on anxiety and decision-making around testing were especially helpful for me.",
+    text: "Clear, evidence-based, and reassuring. Exactly what I wanted as a first-time mom.",
     author: "Samantha L., 34",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
   },
   {
-    text: "I appreciated how structured it is. Each chapter is clear and easy to reference when something new pops up. The red flag sections are straightforward without being scary, which I really needed.",
+    text: "So organized and easy to reference. The red flag sections were especially helpful.",
     author: "Danielle M., 31",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   },
   {
-    text: "This felt like guidance from a very rational, very kind friend. It doesn't sugarcoat things, but it doesn't make you panic either. I felt more prepared walking into my third trimester because of it.",
+    text: "It felt grounded and honest. I actually felt more prepared after finishing it.",
     author: "Priya S., 27",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
   },
   {
-    text: "I've read other pregnancy books that felt overwhelming. This one is calm and organized. I liked that it focuses on what actually matters and doesn't overload you with unnecessary details.",
+    text: "Practical, calm, and not overwhelming. I wish I had this earlier in my pregnancy.",
     author: "Hannah T., 36",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
@@ -68,19 +68,19 @@ const ReviewsSection = () => {
       <div className="max-w-md mx-auto">
         {/* Heading */}
         <h2 
-          className="text-4xl sm:text-5xl font-light text-center mb-3"
+          className="text-3xl sm:text-4xl font-light text-center mb-3"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.1',
             letterSpacing: '-0.03em'
           }}
         >
-          Over 100,000 Readers Worldwide
+          Over 1,500 First-Time Mom Readers
         </h2>
 
         {/* Subheading */}
         <p 
-          className="text-center text-base sm:text-lg mb-12"
+          className="text-center text-sm sm:text-base mb-10"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.4',
@@ -92,21 +92,21 @@ const ReviewsSection = () => {
         </p>
 
         {/* Review Card Container with Overflow Hidden */}
-        <div className="overflow-hidden mb-8">
+        <div className="overflow-hidden mb-6">
           <div 
             key={currentIndex}
-            className={`rounded-3xl p-8 ${
+            className={`rounded-2xl p-6 ${
               direction === 'right' 
                 ? 'animate-slide-in-right' 
                 : 'animate-slide-in-left'
             }`}
             style={{ 
               backgroundColor: currentReview.bgColor,
-              minHeight: '200px'
+              minHeight: '140px'
             }}
           >
             <blockquote 
-              className="text-lg sm:text-xl mb-4"
+              className="text-base sm:text-lg mb-3"
               style={{ 
                 color: currentReview.textColor,
                 lineHeight: '1.5',
@@ -116,7 +116,7 @@ const ReviewsSection = () => {
               "{currentReview.text}"
             </blockquote>
             <p 
-              className="text-base italic"
+              className="text-sm italic"
               style={{ 
                 color: currentReview.textColor,
                 fontWeight: 400
