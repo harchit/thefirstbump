@@ -27,10 +27,11 @@ const StickyCtaButton = () => {
       }`}
     >
       <Button
-        className="font-semibold px-8 py-6 rounded-full text-base shadow-2xl transition-all duration-300 hover:scale-105"
+        className="font-semibold px-8 py-4 rounded-full text-base transition-all duration-300 hover:scale-105"
         style={{
           backgroundColor: "#2d3a2b",
           color: "#ffffff",
+          boxShadow: '0 0 12px rgba(255, 255, 255, 0.4)'
         }}
       >
         Get My Digital Copy
