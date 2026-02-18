@@ -39,20 +39,31 @@ const reviews = [
 
 const ReviewsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState<'left' | 'right'>('right');
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
 
   const goToPrevious = () => {
-    setDirection('left');
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
-    );
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setSlideDirection('left');
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+      );
+      setIsAnimating(false);
+    }, 300);
   };
 
   const goToNext = () => {
-    setDirection('right');
-    setCurrentIndex((prevIndex) => 
-      prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
-    );
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setSlideDirection('right');
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
+      );
+      setIsAnimating(false);
+    }, 300);
   };
 
   const currentReview = reviews[currentIndex];
@@ -92,13 +103,15 @@ const ReviewsSection = () => {
         </p>
 
         {/* Review Card Container with Overflow Hidden */}
-        <div className="overflow-hidden mb-6">
+        <div className="overflow-hidden mb-6 relative">
           <div 
             key={currentIndex}
-            className={`rounded-2xl p-6 ${
-              direction === 'right' 
-                ? 'animate-slide-in-right' 
-                : 'animate-slide-in-left'
+            className={`rounded-2xl p-6 transition-transform duration-300 ease-in-out ${
+              isAnimating 
+                ? slideDirection === 'right' 
+                  ? '-translate-x-full' 
+                  : 'translate-x-full'
+                : 'translate-x-0'
             }`}
             style={{ 
               backgroundColor: currentReview.bgColor,
@@ -128,61 +141,29 @@ const ReviewsSection = () => {
         </div>
 
         {/* Navigation Arrows */}
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-3">
           <Button
             onClick={goToPrevious}
-            className="w-12 h-12 rounded-full p-0 transition-all duration-300 hover:scale-110"
+            className="w-9 h-9 rounded-full p-0 transition-all duration-300 hover:scale-110"
             style={{ 
               backgroundColor: '#2D3A2B',
               color: '#ffffff'
             }}
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-4 h-4" />
           </Button>
           <Button
             onClick={goToNext}
-            className="w-12 h-12 rounded-full p-0 transition-all duration-300 hover:scale-110"
+            className="w-9 h-9 rounded-full p-0 transition-all duration-300 hover:scale-110"
             style={{ 
               backgroundColor: '#2D3A2B',
               color: '#ffffff'
             }}
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-4 h-4" />
           </Button>
         </div>
       </div>
-
-      <style>{`
-        @keyframes slide-in-right {
-          from {
-            transform: translateX(100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-
-        @keyframes slide-in-left {
-          from {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-
-        .animate-slide-in-right {
-          animation: slide-in-right 0.5s ease-out;
-        }
-
-        .animate-slide-in-left {
-          animation: slide-in-left 0.5s ease-out;
-        }
-      `}</style>
     </div>
   );
 };
