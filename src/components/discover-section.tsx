@@ -175,19 +175,6 @@ const DiscoverSection = () => {
         >
           "When your heart is calm, your baby feels peace."
         </blockquote>
-
-        {/* CTA Button */}
-        <div className="flex justify-center">
-          <Button 
-            className="font-semibold px-8 py-6 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105"
-            style={{ 
-              backgroundColor: '#2d3a2b',
-              color: '#ffffff'
-            }}
-          >
-            Get My Digital Copy
-          </Button>
-        </div>
       </div>
     </div>
   );
