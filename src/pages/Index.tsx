@@ -148,11 +148,11 @@ const Index = () => {
                 textShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
               }}
             >
-              $10.99
+              $23.99
             </p>
           </div>
           <p className="text-[4vw] sm:text-[16px] font-medium" style={{ color: '#ffffff' }}>
-            Normally <span className="line-through ml-1" style={{ color: '#991b1b' }}>$16.99</span>
+            Normally <span className="line-through ml-1" style={{ color: '#991b1b' }}>$31.99</span>
           </p>
         </div>
 
