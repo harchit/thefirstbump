@@ -9,9 +9,7 @@ const DiscoverSection = () => {
   return (
     <div 
       className="w-full py-16 px-6"
-      style={{ 
-        background: 'linear-gradient(180deg, #d4e0cb 0%, #c9d5c0 50%, #bec9b5 100%)'
-      }}
+      style={{ backgroundColor: '#c9d5c0' }}
     >
       <div className="max-w-md mx-auto">
         {/* Main Heading */}
