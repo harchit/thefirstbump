@@ -8,7 +8,7 @@ const JourneySection = () => {
     <div 
       className="w-full py-16 px-6"
       style={{ 
-        background: 'linear-gradient(180deg, #ede8df 0%, #ffffff 100%)',
+        background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
         fontWeight: 300,
         letterSpacing: '-0.02em',
