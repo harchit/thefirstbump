@@ -147,7 +147,7 @@ const Index = () => {
 
         {/* CTA Button */}
         <Button 
-          className="font-semibold px-10 py-3 rounded-full text-[16px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
+          className="font-semibold px-6 py-2 rounded-full text-[15px] shadow-lg mb-5 transition-all duration-300 hover:scale-105 border border-black"
           style={{ 
             backgroundColor: '#ffffff',
             color: '#2d2418'
@@ -161,7 +161,7 @@ const Index = () => {
           <div 
             className="relative px-8 py-2 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
             style={{ 
-              backgroundColor: 'rgba(255, 255, 255, 0.25)',
+              background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.1) 100%)',
               boxShadow: '0 8px 32px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.5)',
             }}
           >
