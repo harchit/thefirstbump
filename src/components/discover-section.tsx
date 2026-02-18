@@ -37,8 +37,7 @@ const DiscoverSection = () => {
             letterSpacing: '-0.01em'
           }}
         >
-          Inside, <span className="font-medium">The First Bump</span> shares how to{" "}
-          <span className="font-semibold">navigate your pregnancy journey</span>, embrace the changes, and connect with your growing baby through mindfulness, self-care, and emotional support.
+          Inside <span className="font-medium">The First Bump</span>, you'll gain clear, grounded guidance for every stage of pregnancy — from the first uncertain weeks to the moment labor begins. This isn't fluff or fear-based advice. It's structured, science-backed clarity designed for modern first-time mothers.
         </p>
 
         {/* Feature Items */}
