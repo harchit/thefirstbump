@@ -71,7 +71,7 @@ const Index = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-center font-medium text-[3.8vw] sm:text-[15px] mb-[2vh] w-[80vw] max-w-[300px] leading-tight" style={{ color: '#ffffff' }}>
+          <p className="text-center font-medium text-[3.8vw] sm:text-[15px] mb-[2vh] w-[85vw] max-w-[360px] leading-tight" style={{ color: '#ffffff' }}>
             An emotionally validating pregnancy blueprint for your journey into motherhood
           </p>
 
