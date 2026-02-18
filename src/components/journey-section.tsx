@@ -87,7 +87,7 @@ const JourneySection = () => {
           </p>
         </div>
 
-        {/* Card 2 - Embracing Your Transformation */}
+        {/* Card 2 - Embrace Your Transformation */}
         <div 
           className="rounded-3xl p-5 text-center"
           style={{ 
@@ -108,7 +108,7 @@ const JourneySection = () => {
               lineHeight: '1.2'
             }}
           >
-            Embracing Your Transformation
+            Embrace Your Transformation
           </h3>
           <p 
             className="text-base"
