@@ -80,7 +80,7 @@ const FaqSection = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index}
-              className="border-b"
+              className="border-b-2"
               style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}
             >
               <button
