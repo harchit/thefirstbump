@@ -124,6 +124,18 @@ const FaqSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Footer Section */}
+        <div className="mt-16 pt-8 border-t" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
+          <div className="flex justify-center items-center space-x-6 sm:space-x-8">
+            <a href="#" className="text-sm text-white opacity-80 hover:opacity-100 transition-opacity">Home</a>
+            <a href="#" className="text-sm text-white opacity-80 hover:opacity-100 transition-opacity">About Us</a>
+            <a href="#" className="text-sm text-white opacity-80 hover:opacity-100 transition-opacity">Terms of Service</a>
+          </div>
+          <p className="text-center text-xs text-white opacity-60 mt-6">
+            © {new Date().getFullYear()} The First Bump. All rights reserved.
+          </p>
+        </div>
       </div>
     </div>
   );
