@@ -79,7 +79,7 @@ const ReviewsSection = () => {
       <div className="max-w-md mx-auto">
         {/* Heading */}
         <h2 
-          className="text-3xl sm:text-4xl font-light text-center mb-3"
+          className="text-4xl sm:text-5xl font-light text-center mb-3"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.1',
@@ -91,7 +91,7 @@ const ReviewsSection = () => {
 
         {/* Subheading */}
         <p 
-          className="text-center text-sm sm:text-base mb-10"
+          className="text-center text-base sm:text-lg mb-10"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.4',
