@@ -6,32 +6,32 @@ import { Button } from "@/components/ui/button";
 
 const reviews = [
   {
-    text: "I didn't expect much, but this book touched me deeply. It's like having a wise teacher guiding you back to balance.",
-    author: "Mark Williams, 45",
+    text: "I bought this during my first trimester when I was googling every little symptom. This book honestly helped me stop spiraling. It explains what's normal without being dramatic, and I felt calmer after almost every chapter.",
+    author: "Emily R., 29",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   },
   {
-    text: "The First Bump gave me the confidence I needed during my pregnancy. Every chapter felt like it was written just for me.",
-    author: "Sarah Chen, 32",
+    text: "As a first-time mom, I wanted something evidence-based but not cold or clinical. This struck the perfect balance. The sections on anxiety and decision-making around testing were especially helpful for me.",
+    author: "Samantha L., 34",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
   },
   {
-    text: "Finally, a pregnancy guide that doesn't overwhelm you with fear. This book is calming, practical, and beautifully written.",
-    author: "Jessica Martinez, 28",
+    text: "I appreciated how structured it is. Each chapter is clear and easy to reference when something new pops up. The red flag sections are straightforward without being scary, which I really needed.",
+    author: "Danielle M., 31",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   },
   {
-    text: "I wish I had this book during my first pregnancy. It's the perfect blend of science and emotional support.",
-    author: "Emily Thompson, 35",
+    text: "This felt like guidance from a very rational, very kind friend. It doesn't sugarcoat things, but it doesn't make you panic either. I felt more prepared walking into my third trimester because of it.",
+    author: "Priya S., 27",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
   },
   {
-    text: "This isn't just a pregnancy book—it's a companion for the entire journey. I've recommended it to all my friends.",
-    author: "Rachel Kim, 30",
+    text: "I've read other pregnancy books that felt overwhelming. This one is calm and organized. I liked that it focuses on what actually matters and doesn't overload you with unnecessary details.",
+    author: "Hannah T., 36",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   }
@@ -39,14 +39,17 @@ const reviews = [
 
 const ReviewsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState<'left' | 'right'>('right');
 
   const goToPrevious = () => {
+    setDirection('left');
     setCurrentIndex((prevIndex) => 
       prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
     );
   };
 
   const goToNext = () => {
+    setDirection('right');
     setCurrentIndex((prevIndex) => 
       prevIndex === reviews.length - 1 ? 0 : prevIndex + 1
     );
@@ -85,36 +88,43 @@ const ReviewsSection = () => {
             fontWeight: 300
           }}
         >
-          Discover how <span className="italic">How To Do The Work</span> is changing lives—one page at a time.
+          Discover how <span className="italic">The First Bump</span> is changing lives—one page at a time.
         </p>
 
-        {/* Review Card */}
-        <div 
-          className="rounded-3xl p-8 mb-8 transition-all duration-500 ease-in-out"
-          style={{ 
-            backgroundColor: currentReview.bgColor,
-            minHeight: '200px'
-          }}
-        >
-          <blockquote 
-            className="text-lg sm:text-xl mb-4"
+        {/* Review Card Container with Overflow Hidden */}
+        <div className="overflow-hidden mb-8">
+          <div 
+            key={currentIndex}
+            className={`rounded-3xl p-8 ${
+              direction === 'right' 
+                ? 'animate-slide-in-right' 
+                : 'animate-slide-in-left'
+            }`}
             style={{ 
-              color: currentReview.textColor,
-              lineHeight: '1.5',
-              fontWeight: 300
+              backgroundColor: currentReview.bgColor,
+              minHeight: '200px'
             }}
           >
-            "{currentReview.text}"
-          </blockquote>
-          <p 
-            className="text-base italic"
-            style={{ 
-              color: currentReview.textColor,
-              fontWeight: 400
-            }}
-          >
-            {currentReview.author}
-          </p>
+            <blockquote 
+              className="text-lg sm:text-xl mb-4"
+              style={{ 
+                color: currentReview.textColor,
+                lineHeight: '1.5',
+                fontWeight: 300
+              }}
+            >
+              "{currentReview.text}"
+            </blockquote>
+            <p 
+              className="text-base italic"
+              style={{ 
+                color: currentReview.textColor,
+                fontWeight: 400
+              }}
+            >
+              {currentReview.author}
+            </p>
+          </div>
         </div>
 
         {/* Navigation Arrows */}
@@ -141,6 +151,38 @@ const ReviewsSection = () => {
           </Button>
         </div>
       </div>
+
+      <style>{`
+        @keyframes slide-in-right {
+          from {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        @keyframes slide-in-left {
+          from {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          to {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
+        .animate-slide-in-right {
+          animation: slide-in-right 0.5s ease-out;
+        }
+
+        .animate-slide-in-left {
+          animation: slide-in-left 0.5s ease-out;
+        }
+      `}</style>
     </div>
   );
 };
