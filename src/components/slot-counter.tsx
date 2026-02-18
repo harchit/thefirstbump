@@ -12,10 +12,7 @@ const SlotCounter = ({ initialValue }: SlotCounterProps) => {
   const [displayDigits, setDisplayDigits] = useState<string[]>(initialValue.toLocaleString().split(''));
 
   useEffect(() => {
-    let intervalIndex = 0;
-    const intervals = [3000, 4000];
-
-    const incrementCount = () => {
+    const interval = setInterval(() => {
       setIsAnimating(true);
       
       setTimeout(() => {
@@ -26,20 +23,9 @@ const SlotCounter = ({ initialValue }: SlotCounterProps) => {
         });
         setIsAnimating(false);
       }, 300);
-    };
+    }, 5000);
 
-    const scheduleNext = () => {
-      const delay = intervals[intervalIndex % intervals.length];
-      intervalIndex++;
-      return setTimeout(() => {
-        incrementCount();
-        timerId = scheduleNext();
-      }, delay);
-    };
-
-    let timerId = scheduleNext();
-
-    return () => clearTimeout(timerId);
+    return () => clearInterval(interval);
   }, []);
 
   return (
