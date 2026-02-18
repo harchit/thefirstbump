@@ -37,14 +37,14 @@ const Index = () => {
         {/* Trust Badge */}
         <div className="flex items-center gap-2 mb-[2vh]">
           <div className="flex -space-x-2">
-            <div className="w-[6vw] h-[6vw] max-w-7 max-h-7 min-w-5 min-h-5 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
+            <div className="w-[8vw] h-[8vw] max-w-9 max-h-9 min-w-6 min-h-6 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
               <img 
                 src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
                 alt="Reader" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="w-[6vw] h-[6vw] max-w-7 max-h-7 min-w-5 min-h-5 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
+            <div className="w-[8vw] h-[8vw] max-w-9 max-h-9 min-w-6 min-h-6 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
               <img 
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
                 alt="Reader" 
@@ -52,7 +52,7 @@ const Index = () => {
               />
             </div>
           </div>
-          <span className="text-[3.2vw] sm:text-sm" style={{ color: '#ffffff' }}>
+          <span className="text-[3.8vw] sm:text-base" style={{ color: '#ffffff' }}>
             Trusted by <span className="font-semibold">7,500+ moms worldwide</span>
           </span>
         </div>
