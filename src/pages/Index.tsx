@@ -53,7 +53,7 @@ const Index = () => {
             </div>
           </div>
           <span className="text-[3.8vw] sm:text-base" style={{ color: '#ffffff' }}>
-            Trusted by <span className="font-semibold">7,500+ moms worldwide</span>
+            Trusted by <span className="font-semibold">2,717+ moms worldwide</span>
           </span>
         </div>
 
