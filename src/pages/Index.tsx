@@ -159,7 +159,7 @@ const Index = () => {
         {/* Pricing */}
         <div className="text-center mb-3 flex flex-col items-center">
           <div 
-            className="relative px-8 py-2 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
+            className="relative px-5 py-2 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
             style={{ 
               background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.1) 100%)',
               boxShadow: '0 8px 32px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.5)',
@@ -174,7 +174,7 @@ const Index = () => {
             />
             
             <p 
-              className="text-[32px] font-bold leading-none relative z-10" 
+              className="text-[32px] font-light leading-none relative z-10" 
               style={{ 
                 color: '#ffffff', 
                 fontFamily: sfProFont,
