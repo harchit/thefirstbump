@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import DiscoverSection from "@/components/discover-section";
+import JourneySection from "@/components/journey-section";
 import StickyCtaButton from "@/components/sticky-cta-button";
 
 const Index = () => {
@@ -168,6 +169,9 @@ const Index = () => {
 
       {/* Discover Section */}
       <DiscoverSection />
+
+      {/* Journey Section */}
+      <JourneySection />
 
       {/* Sticky CTA Button */}
       <StickyCtaButton />
