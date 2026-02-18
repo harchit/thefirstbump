@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
+import WhyThisBookSection from "@/components/why-this-book-section";
 import DiscoverSection from "@/components/discover-section";
 import JourneySection from "@/components/journey-section";
 import StickyCtaButton from "@/components/sticky-cta-button";
@@ -160,6 +161,9 @@ const Index = () => {
           </p>
         </div>
       </div>
+
+      {/* Why This Book Section */}
+      <WhyThisBookSection />
 
       {/* Discover Section */}
       <DiscoverSection />

@@ -7,7 +7,7 @@ const DiscoverSection = () => {
     <div 
       className="w-full pt-6 pb-12 px-6"
       style={{ 
-        background: 'linear-gradient(180deg, #DAE2CB 0%, #EAEEE1 100%)',
+        background: 'linear-gradient(180deg, #DBE2CC 0%, #EAEEE1 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
         fontWeight: 300,
         letterSpacing: '-0.02em',
