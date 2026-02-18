@@ -5,6 +5,7 @@ import DiscoverSection from "@/components/discover-section";
 import JourneySection from "@/components/journey-section";
 import StickyCtaButton from "@/components/sticky-cta-button";
 import ReviewsSection from "@/components/reviews-section";
+import FaqSection from "@/components/faq-section";
 
 const Index = () => {
   const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
@@ -176,6 +177,9 @@ const Index = () => {
 
       {/* Reviews Section */}
       <ReviewsSection />
+
+      {/* FAQ Section */}
+      <FaqSection />
 
       {/* Sticky CTA Button */}
       <StickyCtaButton />
