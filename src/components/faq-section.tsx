@@ -53,7 +53,7 @@ const FaqSection = () => {
               className="italic"
               style={{ 
                 fontFamily: "'Playfair Display', serif",
-                color: '#c7c3b4'
+                color: '#FBFE87'
               }}
             >
               asked
