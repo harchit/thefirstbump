@@ -77,7 +77,7 @@ const Index = () => {
 
           {/* Book Image Container with Slide-Up Animation */}
           <div 
-            className={`relative mb-[2vh] transition-[transform,opacity] duration-1000 ease-out ${
+            className={`relative mb-[1vh] transition-[transform,opacity] duration-1000 ease-out ${
               isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}
           >
@@ -105,12 +105,12 @@ const Index = () => {
                 transitionDelay: '500ms'
               }}
             />
-            
-            {/* E-Book Label */}
-            <p className="text-center text-[3.5vw] sm:text-[14px] mt-[1.5vh]" style={{ color: '#ffffff' }}>
-              Complete E-Book (PDF)
-            </p>
           </div>
+
+          {/* E-Book Label - Separate from book container */}
+          <p className="text-center text-[3.5vw] sm:text-[14px] mb-[2vh]" style={{ color: '#ffffff' }}>
+            Complete E-Book (PDF)
+          </p>
 
           {/* Benefits List */}
           <div className="space-y-0 mb-[1.5vh]">
