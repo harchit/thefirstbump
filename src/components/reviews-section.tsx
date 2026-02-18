@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 const reviews = [
   {
@@ -41,6 +42,8 @@ const ReviewsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
+  
+  const sectionFade = useFadeInOnScroll(0.1, 0);
 
   const goToPrevious = () => {
     if (isAnimating) return;
@@ -76,7 +79,14 @@ const ReviewsSection = () => {
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
       }}
     >
-      <div className="max-w-md mx-auto">
+      <div 
+        ref={sectionFade.ref}
+        className={`max-w-md mx-auto transition-all duration-700 ease-out ${
+          sectionFade.isVisible 
+            ? 'opacity-100 translate-y-0' 
+            : 'opacity-0 translate-y-8'
+        }`}
+      >
         {/* Heading */}
         <h2 
           className="text-4xl sm:text-5xl font-light text-center mb-3"

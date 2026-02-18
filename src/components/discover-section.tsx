@@ -1,8 +1,15 @@
 "use client";
 
 import { Calendar, Heart, Shield, CheckSquare } from "lucide-react";
+import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 const DiscoverSection = () => {
+  const feature1 = useFadeInOnScroll(0.1, 0);
+  const feature2 = useFadeInOnScroll(0.1, 100);
+  const feature3 = useFadeInOnScroll(0.1, 200);
+  const feature4 = useFadeInOnScroll(0.1, 300);
+  const quote = useFadeInOnScroll(0.1, 400);
+
   return (
     <div 
       className="w-full pt-6 pb-12 px-6"
@@ -42,7 +49,14 @@ const DiscoverSection = () => {
         {/* Feature Items */}
         <div className="space-y-10 mb-12">
           {/* Feature 1 - Trimester-by-Trimester Clarity */}
-          <div className="flex flex-col items-center text-center">
+          <div 
+            ref={feature1.ref}
+            className={`flex flex-col items-center text-center transition-all duration-700 ease-out ${
+              feature1.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div className="mb-2">
               <Calendar 
                 className="w-12 h-12" 
@@ -71,7 +85,14 @@ const DiscoverSection = () => {
           </div>
 
           {/* Feature 2 - Emotional Grounding Tools */}
-          <div className="flex flex-col items-center text-center">
+          <div 
+            ref={feature2.ref}
+            className={`flex flex-col items-center text-center transition-all duration-700 ease-out ${
+              feature2.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div 
               className="mb-2 w-12 h-12 rounded-xl flex items-center justify-center border-2"
               style={{ borderColor: '#3d4a3a' }}
@@ -103,7 +124,14 @@ const DiscoverSection = () => {
           </div>
 
           {/* Feature 3 - Confident Decision-Making */}
-          <div className="flex flex-col items-center text-center">
+          <div 
+            ref={feature3.ref}
+            className={`flex flex-col items-center text-center transition-all duration-700 ease-out ${
+              feature3.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div className="mb-2">
               <Shield 
                 className="w-12 h-12" 
@@ -132,7 +160,14 @@ const DiscoverSection = () => {
           </div>
 
           {/* Feature 4 - Practical Preparation */}
-          <div className="flex flex-col items-center text-center">
+          <div 
+            ref={feature4.ref}
+            className={`flex flex-col items-center text-center transition-all duration-700 ease-out ${
+              feature4.isVisible 
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-8'
+            }`}
+          >
             <div 
               className="mb-2 w-12 h-12 rounded-xl flex items-center justify-center border-2"
               style={{ borderColor: '#3d4a3a' }}
@@ -166,7 +201,12 @@ const DiscoverSection = () => {
 
         {/* Quote */}
         <blockquote 
-          className="text-center text-2xl sm:text-3xl font-light"
+          ref={quote.ref}
+          className={`text-center text-2xl sm:text-3xl font-light transition-all duration-700 ease-out ${
+            quote.isVisible 
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 translate-y-8'
+          }`}
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.15'

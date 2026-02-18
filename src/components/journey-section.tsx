@@ -2,8 +2,13 @@
 
 import { Sparkles, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 const JourneySection = () => {
+  const heroCard = useFadeInOnScroll(0.1, 0);
+  const card1 = useFadeInOnScroll(0.1, 150);
+  const card2 = useFadeInOnScroll(0.1, 300);
+
   return (
     <div 
       className="w-full pt-12 pb-8 px-6"
@@ -18,7 +23,12 @@ const JourneySection = () => {
       <div className="max-w-md mx-auto space-y-6">
         {/* Hero Card */}
         <div 
-          className="rounded-3xl p-8 text-center"
+          ref={heroCard.ref}
+          className={`rounded-3xl p-8 text-center transition-all duration-700 ease-out ${
+            heroCard.isVisible 
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 translate-y-8'
+          }`}
           style={{ 
             backgroundColor: '#2d3a2b'
           }}
@@ -55,7 +65,12 @@ const JourneySection = () => {
 
         {/* Card 1 - Nurturing Your Connection */}
         <div 
-          className="rounded-3xl p-5 text-center"
+          ref={card1.ref}
+          className={`rounded-3xl p-5 text-center transition-all duration-700 ease-out ${
+            card1.isVisible 
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 translate-y-8'
+          }`}
           style={{ 
             backgroundColor: '#e8e6dc'
           }}
@@ -89,7 +104,12 @@ const JourneySection = () => {
 
         {/* Card 2 - Embrace Your Transformation */}
         <div 
-          className="rounded-3xl p-5 text-center"
+          ref={card2.ref}
+          className={`rounded-3xl p-5 text-center transition-all duration-700 ease-out ${
+            card2.isVisible 
+              ? 'opacity-100 translate-y-0' 
+              : 'opacity-0 translate-y-8'
+          }`}
           style={{ 
             backgroundColor: '#e8e6dc'
           }}
