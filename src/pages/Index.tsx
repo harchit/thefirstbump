@@ -77,23 +77,32 @@ const Index = () => {
 
           {/* Book Image Container with Slide-Up Animation */}
           <div 
-            className={`relative mb-[2vh] transition-all duration-1000 ease-out ${
+            className={`relative mb-[2vh] transition-[transform,opacity] duration-1000 ease-out ${
               isLoaded ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}
           >
-            {/* Book Shadow */}
+            {/* Book Shadow - separate transition with delay */}
             <div 
-              className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-[32vw] max-w-36 h-6 rounded-full blur-xl"
-              style={{ backgroundColor: 'rgba(0, 0, 0, 0.4)' }}
+              className={`absolute -bottom-4 left-1/2 -translate-x-1/2 w-[32vw] max-w-36 h-6 rounded-full transition-opacity duration-700 ease-out ${
+                isLoaded ? 'opacity-100' : 'opacity-0'
+              }`}
+              style={{ 
+                backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                filter: 'blur(16px)',
+                transitionDelay: isLoaded ? '300ms' : '0ms'
+              }}
             />
             
             {/* Book Cover Image */}
             <img
               src="/book-landing-page-removebg-preview.png"
               alt="The First Bump - A New Mom's Pregnancy Guide"
-              className="relative w-[35vw] max-w-36 min-w-28 h-auto drop-shadow-2xl"
+              className={`relative w-[35vw] max-w-36 min-w-28 h-auto transition-[filter] duration-500 ease-out ${
+                isLoaded ? '' : ''
+              }`}
               style={{
-                filter: 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))'
+                filter: isLoaded ? 'drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3))' : 'none',
+                transitionDelay: '500ms'
               }}
             />
             
