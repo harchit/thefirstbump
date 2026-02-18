@@ -9,7 +9,8 @@ const DiscoverSection = () => {
       className="w-full py-16 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #c7c3b4 0%, #ede8df 100%)',
-        fontFamily: "'Graphik Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+        fontWeight: 300
       }}
     >
       <div className="max-w-md mx-auto">
