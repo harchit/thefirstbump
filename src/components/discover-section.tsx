@@ -1,6 +1,6 @@
 "use client";
 
-import { Baby, Heart, Moon } from "lucide-react";
+import { Calendar, Heart, Shield, CheckSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DiscoverSection = () => {
@@ -42,15 +42,21 @@ const DiscoverSection = () => {
 
         {/* Feature Items */}
         <div className="space-y-14 mb-16">
-          {/* Feature 1 */}
+          {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div className="flex flex-col items-center text-center">
             <div className="mb-4">
-              <Baby 
+              <Calendar 
                 className="w-16 h-16" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
+            <h3 
+              className="text-lg font-medium mb-2"
+              style={{ color: '#3d4a3a' }}
+            >
+              Trimester-by-Trimester Clarity
+            </h3>
             <p 
               className="text-base max-w-xs"
               style={{ 
@@ -58,11 +64,11 @@ const DiscoverSection = () => {
                 lineHeight: '1.5'
               }}
             >
-              How to embrace each trimester and create a deeper bond with your baby.
+              What's happening in your body, what's normal, and when to pay attention.
             </p>
           </div>
 
-          {/* Feature 2 */}
+          {/* Feature 2 - Emotional Grounding Tools */}
           <div className="flex flex-col items-center text-center">
             <div 
               className="mb-4 w-16 h-16 rounded-2xl flex items-center justify-center border-2"
@@ -74,6 +80,12 @@ const DiscoverSection = () => {
                 strokeWidth={1.5}
               />
             </div>
+            <h3 
+              className="text-lg font-medium mb-2"
+              style={{ color: '#3d4a3a' }}
+            >
+              Emotional Grounding Tools
+            </h3>
             <p 
               className="text-base max-w-xs"
               style={{ 
@@ -81,19 +93,25 @@ const DiscoverSection = () => {
                 lineHeight: '1.5'
               }}
             >
-              Gentle self-care practices and emotional tools to calm your mind and nurture your body.
+              Support for anxiety, mood shifts, and the identity changes of early motherhood.
             </p>
           </div>
 
-          {/* Feature 3 */}
+          {/* Feature 3 - Confident Decision-Making */}
           <div className="flex flex-col items-center text-center">
             <div className="mb-4">
-              <Moon 
+              <Shield 
                 className="w-16 h-16" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
+            <h3 
+              className="text-lg font-medium mb-2"
+              style={{ color: '#3d4a3a' }}
+            >
+              Confident Decision-Making
+            </h3>
             <p 
               className="text-base max-w-xs"
               style={{ 
@@ -101,7 +119,36 @@ const DiscoverSection = () => {
                 lineHeight: '1.5'
               }}
             >
-              A nightly routine to help you unwind, release tension, and rest deeply.
+              Clear explanations of testing, birth options, and red flags — without fear-based messaging.
+            </p>
+          </div>
+
+          {/* Feature 4 - Practical Preparation */}
+          <div className="flex flex-col items-center text-center">
+            <div 
+              className="mb-4 w-16 h-16 rounded-2xl flex items-center justify-center border-2"
+              style={{ borderColor: '#3d4a3a' }}
+            >
+              <CheckSquare 
+                className="w-8 h-8" 
+                style={{ color: '#3d4a3a' }}
+                strokeWidth={1.5}
+              />
+            </div>
+            <h3 
+              className="text-lg font-medium mb-2"
+              style={{ color: '#3d4a3a' }}
+            >
+              Practical Preparation
+            </h3>
+            <p 
+              className="text-base max-w-xs"
+              style={{ 
+                color: '#3d4a3a',
+                lineHeight: '1.5'
+              }}
+            >
+              What you truly need, how to prepare for labor, and when to call your provider.
             </p>
           </div>
         </div>
