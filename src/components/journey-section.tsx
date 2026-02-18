@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const JourneySection = () => {
   return (
     <div 
-      className="w-full py-16 px-6"
+      className="w-full pt-16 pb-8 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
