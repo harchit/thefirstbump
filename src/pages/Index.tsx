@@ -58,13 +58,13 @@ const Index = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-center mb-1 leading-tight w-[85vw] max-w-[320px]">
-          <span className="text-[8vw] sm:text-[32px] font-medium block" style={{ color: '#ffffff' }}>The First Bump</span>
-          <span className="text-[6.5vw] sm:text-[28px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A New Mom's Pregnancy Guide</span>
+        <h1 className="text-center mb-1 leading-tight w-[85vw] max-w-[340px]">
+          <span className="text-[9vw] sm:text-[36px] font-medium block" style={{ color: '#ffffff' }}>The First Bump</span>
+          <span className="text-[7.5vw] sm:text-[32px] italic block" style={{ color: '#ffffff', fontFamily: "'Playfair Display', serif" }}>A New Mom's Pregnancy Guide</span>
         </h1>
 
         {/* Subheading */}
-        <p className="text-center font-medium text-[3.2vw] sm:text-[13px] mb-[2vh] w-[75vw] max-w-[280px] leading-tight" style={{ color: '#ffffff' }}>
+        <p className="text-center font-medium text-[3.8vw] sm:text-[15px] mb-[2vh] w-[80vw] max-w-[300px] leading-tight" style={{ color: '#ffffff' }}>
           An emotionally validating pregnancy blueprint for your journey into motherhood
         </p>
 
