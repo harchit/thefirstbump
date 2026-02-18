@@ -4,20 +4,20 @@ import { Baby, Heart, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const DiscoverSection = () => {
-  const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
-
   return (
     <div 
       className="w-full py-16 px-6"
-      style={{ background: 'linear-gradient(180deg, #c7c3b4 0%, #ede8df 100%)' }}
+      style={{ 
+        background: 'linear-gradient(180deg, #c7c3b4 0%, #ede8df 100%)',
+        fontFamily: "'Graphik Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+      }}
     >
       <div className="max-w-md mx-auto">
         {/* Main Heading */}
         <h2 
           className="text-4xl sm:text-5xl font-light text-center mb-6"
           style={{ 
-            color: '#3d4a3a',
-            fontFamily: sfProFont
+            color: '#3d4a3a'
           }}
         >
           What You'll Discover
@@ -27,8 +27,7 @@ const DiscoverSection = () => {
         <p 
           className="text-center text-base sm:text-lg leading-relaxed mb-16"
           style={{ 
-            color: '#3d4a3a',
-            fontFamily: sfProFont
+            color: '#3d4a3a'
           }}
         >
           Inside, <span className="font-medium">The First Bump</span> shares how to{" "}
@@ -49,8 +48,7 @@ const DiscoverSection = () => {
             <p 
               className="text-base leading-relaxed max-w-xs"
               style={{ 
-                color: '#3d4a3a',
-                fontFamily: sfProFont
+                color: '#3d4a3a'
               }}
             >
               How to embrace each trimester and create a deeper bond with your baby.
@@ -72,8 +70,7 @@ const DiscoverSection = () => {
             <p 
               className="text-base leading-relaxed max-w-xs"
               style={{ 
-                color: '#3d4a3a',
-                fontFamily: sfProFont
+                color: '#3d4a3a'
               }}
             >
               Gentle self-care practices and emotional tools to calm your mind and nurture your body.
@@ -92,8 +89,7 @@ const DiscoverSection = () => {
             <p 
               className="text-base leading-relaxed max-w-xs"
               style={{ 
-                color: '#3d4a3a',
-                fontFamily: sfProFont
+                color: '#3d4a3a'
               }}
             >
               A nightly routine to help you unwind, release tension, and rest deeply.
@@ -105,8 +101,7 @@ const DiscoverSection = () => {
         <blockquote 
           className="text-center text-2xl sm:text-3xl font-light leading-snug mb-8"
           style={{ 
-            color: '#3d4a3a',
-            fontFamily: sfProFont
+            color: '#3d4a3a'
           }}
         >
           "When your heart is calm, your baby feels peace."
