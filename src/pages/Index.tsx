@@ -82,7 +82,7 @@ const Index = () => {
           
           {/* Book Cover Image */}
           <img
-            src="/book-cover.png"
+            src="/book-landing-page-removebg-preview.png"
             alt="The First Bump - A New Mom's Pregnancy Guide"
             className="relative w-[35vw] max-w-36 min-w-28 h-auto drop-shadow-2xl"
             style={{
