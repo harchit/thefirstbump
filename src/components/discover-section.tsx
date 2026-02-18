@@ -40,7 +40,7 @@ const DiscoverSection = () => {
         </p>
 
         {/* Feature Items */}
-        <div className="space-y-6 mb-8">
+        <div className="space-y-10 mb-8">
           {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div className="flex flex-col items-center text-center">
             <div className="mb-2">
