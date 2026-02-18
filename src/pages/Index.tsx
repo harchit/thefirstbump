@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import DiscoverSection from "@/components/discover-section";
 import JourneySection from "@/components/journey-section";
 import StickyCtaButton from "@/components/sticky-cta-button";
+import ReviewsSection from "@/components/reviews-section";
 
 const Index = () => {
   const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
@@ -172,6 +173,9 @@ const Index = () => {
 
       {/* Journey Section */}
       <JourneySection />
+
+      {/* Reviews Section */}
+      <ReviewsSection />
 
       {/* Sticky CTA Button */}
       <StickyCtaButton />
