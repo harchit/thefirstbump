@@ -5,7 +5,7 @@ import { Calendar, Heart, Shield, CheckSquare } from "lucide-react";
 const DiscoverSection = () => {
   return (
     <div 
-      className="w-full pt-6 pb-3 px-6"
+      className="w-full pt-6 pb-12 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #DAE2CB 0%, #EAEEE1 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -40,7 +40,7 @@ const DiscoverSection = () => {
         </p>
 
         {/* Feature Items */}
-        <div className="space-y-10 mb-8">
+        <div className="space-y-10 mb-12">
           {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div className="flex flex-col items-center text-center">
             <div className="mb-2">
@@ -166,7 +166,7 @@ const DiscoverSection = () => {
 
         {/* Quote */}
         <blockquote 
-          className="text-center text-2xl sm:text-3xl font-light mb-3"
+          className="text-center text-2xl sm:text-3xl font-light"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.15'
