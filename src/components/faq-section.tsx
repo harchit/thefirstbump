@@ -41,25 +41,24 @@ const FaqSection = () => {
         <div className="max-w-md mx-auto">
           {/* Heading */}
           <h2 
-            className="text-3xl sm:text-4xl font-light mb-1"
+            className="text-3xl sm:text-4xl font-light mb-4"
             style={{ 
               color: '#ffffff',
               lineHeight: '1.1',
               letterSpacing: '-0.03em'
             }}
           >
-            Frequently
-          </h2>
-          <h2 
-            className="text-3xl sm:text-4xl italic mb-4"
-            style={{ 
-              color: '#ffffff',
-              lineHeight: '1.1',
-              letterSpacing: '-0.03em',
-              fontFamily: "'Playfair Display', serif"
-            }}
-          >
-            asked questions
+            Frequently{' '}
+            <span 
+              className="italic"
+              style={{ 
+                fontFamily: "'Playfair Display', serif",
+                color: '#c7c3b4'
+              }}
+            >
+              asked
+            </span>
+            {' '}questions
           </h2>
 
           {/* Subheading */}
