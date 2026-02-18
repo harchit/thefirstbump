@@ -41,7 +41,7 @@ const FaqSection = () => {
         <div className="max-w-md mx-auto">
           {/* Heading */}
           <h2 
-            className="text-3xl sm:text-4xl font-light mb-4"
+            className="text-4xl sm:text-5xl font-light mb-4"
             style={{ 
               color: '#ffffff',
               lineHeight: '1.1',
@@ -63,7 +63,7 @@ const FaqSection = () => {
 
           {/* Subheading */}
           <p 
-            className="text-sm sm:text-base mb-10"
+            className="text-base sm:text-lg mb-10"
             style={{ 
               color: '#ffffff',
               lineHeight: '1.4',
@@ -88,7 +88,7 @@ const FaqSection = () => {
                   className="w-full py-6 flex items-center justify-between text-left transition-all duration-300"
                 >
                   <span 
-                    className="text-base sm:text-lg font-light pr-4"
+                    className="text-lg sm:text-xl font-light pr-4"
                     style={{ 
                       color: '#ffffff',
                       lineHeight: '1.4'
@@ -110,7 +110,7 @@ const FaqSection = () => {
                   }`}
                 >
                   <p 
-                    className="text-sm sm:text-base"
+                    className="text-base sm:text-lg"
                     style={{ 
                       color: '#ffffff',
                       lineHeight: '1.5',
@@ -133,9 +133,9 @@ const FaqSection = () => {
         }}
       >
         <div className="max-w-md mx-auto flex justify-center items-center space-x-6 sm:space-x-8">
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">Home</a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">About Us</a>
-          <a href="#" className="text-sm text-gray-700 hover:text-black transition-colors">Terms Of Service</a>
+          <a href="#" className="text-base text-gray-700 hover:text-black transition-colors">Home</a>
+          <a href="#" className="text-base text-gray-700 hover:text-black transition-colors">About Us</a>
+          <a href="#" className="text-base text-gray-700 hover:text-black transition-colors">Terms Of Service</a>
         </div>
       </div>
     </>
