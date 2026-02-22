@@ -41,7 +41,7 @@ const Index = () => {
         />
         
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center px-4 sm:px-5 py-[2vh]">
+        <div className="relative z-10 flex flex-col items-center px-4 sm:px-5 pt-[2vh] pb-[1vh]">
           {/* Trust Badge */}
           <div className="flex items-center gap-2 mb-[2vh]">
             <div className="flex -space-x-2">
