@@ -122,43 +122,15 @@ const Index = () => {
             Get My Digital Copy
           </Button>
 
-          {/* Pricing */}
+          {/* Promo Code */}
           <div className="text-center mb-[1.5vh] flex flex-col items-center">
-            <div 
-              className="relative px-[3vw] sm:px-3 py-2.5 rounded-full backdrop-blur-xl mb-2 overflow-hidden"
-              style={{ 
-                background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0.1) 100%)',
-                boxShadow: '0 8px 32px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.5)',
-              }}
-            >
-              {/* Inner glow highlight at top */}
-              <div 
-                className="absolute top-0 left-0 right-0 h-[1px]"
-                style={{
-                  background: 'linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent)'
-                }}
-              />
-              
-              <p 
-                className="text-[6.5vw] sm:text-[26px] font-light leading-none relative z-10" 
-                style={{ 
-                  color: '#ffffff', 
-                  fontFamily: sfProFont,
-                  textShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
-                }}
-              >
-                $23.99
-              </p>
-            </div>
-            <p className="text-[4vw] sm:text-[16px] font-medium" style={{ color: '#ffffff' }}>
-              Normally <span className="line-through ml-1" style={{ color: '#991b1b' }}>$31.99</span>
+            <p className="text-[4.5vw] sm:text-lg font-medium" style={{ color: '#ffffff' }}>
+              Use code "<span className="font-bold">BUMP1</span>" at checkout for 15% off
+            </p>
+            <p className="text-[4vw] sm:text-[16px] italic mt-1" style={{ color: '#ffffff' }}>
+              Limited time offer, ends March 15th
             </p>
           </div>
-
-          {/* Limited Time Offer */}
-          <p className="text-[4.5vw] sm:text-lg italic font-medium" style={{ color: '#ffffff' }}>
-            Limited-Time Offer- Ends Soon
-          </p>
         </div>
       </div>
 
