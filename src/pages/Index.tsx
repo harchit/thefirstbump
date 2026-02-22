@@ -23,7 +23,7 @@ const Index = () => {
 
   return (
     <>
-      <div className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#c9a87c' }}>
+      <div className="relative overflow-hidden" style={{ backgroundColor: '#c9a87c' }}>
         {/* Background - Soft Nursery/Pregnancy Scene */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
