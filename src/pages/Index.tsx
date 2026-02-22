@@ -125,33 +125,20 @@ const Index = () => {
 
           {/* Promo Code Section */}
           <div className="text-center mb-[1.5vh] flex flex-col items-center">
-            {!isPromoRevealed ? (
-              <>
-                <p className="text-[4.5vw] sm:text-lg font-medium mb-2" style={{ color: '#ffffff' }}>
-                  Click to reveal 15% promo code
-                </p>
-                <Button
-                  onClick={() => setIsPromoRevealed(true)}
-                  className="font-semibold px-6 py-2 rounded-full text-[3.8vw] sm:text-[14px] transition-all duration-300 hover:scale-105"
-                  style={{ 
-                    backgroundColor: 'transparent',
-                    color: '#ffffff',
-                    border: '2px solid #ffffff'
-                  }}
-                >
-                  Reveal Code
-                </Button>
-              </>
-            ) : (
-              <>
-                <p className="text-[4.5vw] sm:text-lg font-medium" style={{ color: '#ffffff' }}>
-                  Use code "<span className="font-bold">BUMP1</span>" at checkout for 15% off
-                </p>
-                <p className="text-[4vw] sm:text-[16px] italic mt-1" style={{ color: '#ffffff' }}>
-                  Offer Ends March 15th
-                </p>
-              </>
-            )}
+            <p className="text-[3.5vw] sm:text-sm font-medium mb-1.5" style={{ color: '#ffffff' }}>
+              {isPromoRevealed ? "Offer ends March 15" : "Click to reveal 15% promo code"}
+            </p>
+            <Button
+              onClick={() => setIsPromoRevealed(true)}
+              className={`font-semibold px-4 py-1 h-auto rounded-full text-[3.2vw] sm:text-xs transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
+              style={{ 
+                backgroundColor: isPromoRevealed ? '#ffffff' : 'transparent',
+                color: isPromoRevealed ? '#2d2418' : '#ffffff',
+                border: '1.5px solid #ffffff'
+              }}
+            >
+              {isPromoRevealed ? "BUMP1" : "Reveal Code"}
+            </Button>
           </div>
         </div>
       </div>
