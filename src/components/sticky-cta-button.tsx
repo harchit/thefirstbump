@@ -22,12 +22,12 @@ const StickyCtaButton = () => {
 
   return (
     <div
-      className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
+      className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"
       }`}
     >
       <Button
-        className="font-semibold px-8 py-4 rounded-full text-base transition-all duration-300 hover:scale-105"
+        className="font-semibold px-12 py-6 rounded-full text-lg transition-all duration-300 hover:scale-105"
         style={{
           backgroundColor: "#2d3a2b",
           color: "#ffffff",
