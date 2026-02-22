@@ -96,7 +96,7 @@ const ReviewsSection = () => {
             letterSpacing: '-0.03em'
           }}
         >
-          Over 2,700 First-Time Mom Readers
+          Over 1,100 First-Time Mom Readers
         </h2>
 
         {/* Subheading */}
