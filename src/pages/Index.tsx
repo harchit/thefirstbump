@@ -128,7 +128,7 @@ const Index = () => {
               Use code "<span className="font-bold">BUMP1</span>" at checkout for 15% off
             </p>
             <p className="text-[4vw] sm:text-[16px] italic mt-1" style={{ color: '#ffffff' }}>
-              Limited time offer, ends March 15th
+              Offer Ends March 15th
             </p>
           </div>
         </div>
