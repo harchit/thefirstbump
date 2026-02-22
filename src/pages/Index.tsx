@@ -12,6 +12,7 @@ import SlotCounter from "@/components/slot-counter";
 const Index = () => {
   const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isPromoRevealed, setIsPromoRevealed] = useState(false);
 
   useEffect(() => {
     // Trigger animation after component mounts
@@ -122,14 +123,35 @@ const Index = () => {
             Get My Digital Copy
           </Button>
 
-          {/* Promo Code */}
+          {/* Promo Code Section */}
           <div className="text-center mb-[1.5vh] flex flex-col items-center">
-            <p className="text-[4.5vw] sm:text-lg font-medium" style={{ color: '#ffffff' }}>
-              Use code "<span className="font-bold">BUMP1</span>" at checkout for 15% off
-            </p>
-            <p className="text-[4vw] sm:text-[16px] italic mt-1" style={{ color: '#ffffff' }}>
-              Offer Ends March 15th
-            </p>
+            {!isPromoRevealed ? (
+              <>
+                <p className="text-[4.5vw] sm:text-lg font-medium mb-2" style={{ color: '#ffffff' }}>
+                  Click to reveal 15% promo code
+                </p>
+                <Button
+                  onClick={() => setIsPromoRevealed(true)}
+                  className="font-semibold px-6 py-2 rounded-full text-[3.8vw] sm:text-[14px] transition-all duration-300 hover:scale-105"
+                  style={{ 
+                    backgroundColor: 'transparent',
+                    color: '#ffffff',
+                    border: '2px solid #ffffff'
+                  }}
+                >
+                  Reveal Code
+                </Button>
+              </>
+            ) : (
+              <>
+                <p className="text-[4.5vw] sm:text-lg font-medium" style={{ color: '#ffffff' }}>
+                  Use code "<span className="font-bold">BUMP1</span>" at checkout for 15% off
+                </p>
+                <p className="text-[4vw] sm:text-[16px] italic mt-1" style={{ color: '#ffffff' }}>
+                  Offer Ends March 15th
+                </p>
+              </>
+            )}
           </div>
         </div>
       </div>
