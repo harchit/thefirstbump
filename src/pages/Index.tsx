@@ -46,16 +46,16 @@ const Index = () => {
           <div className="flex items-center gap-2 mb-[2vh]">
             <div className="flex -space-x-2">
               <div className="w-[8vw] h-[8vw] max-w-9 max-h-9 min-w-6 min-h-6 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
-                <img 
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" 
-                  alt="Reader" 
+                <img
+                  src="/latina.jpg"
+                  alt="Reader"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="w-[8vw] h-[8vw] max-w-9 max-h-9 min-w-6 min-h-6 rounded-full border-2 border-white/80 overflow-hidden shadow-sm">
-                <img 
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" 
-                  alt="Reader" 
+                <img
+                  src="/woman2.jpg"
+                  alt="Reader"
                   className="w-full h-full object-cover"
                 />
               </div>
