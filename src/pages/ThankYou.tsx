@@ -94,7 +94,8 @@ const ThankYou = () => {
             }`}
             style={{ color: '#ffffff', lineHeight: '1.4' }}
           >
-            Your copy of <span className="italic">The First Bump</span> is ready
+            Your copy of <span className="italic">The First Bump</span> is ready.
+            <span className="block mt-1 opacity-90">Check your email for access.</span>
           </p>
         </div>
       </div>
