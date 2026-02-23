@@ -52,12 +52,13 @@ const JourneySection = () => {
           >
             If your heart is seeking guidance... this is where it begins.
           </p>
-          <Button 
+          <Button
             className="font-normal px-8 py-5 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105"
-            style={{ 
+            style={{
               backgroundColor: '#c7c3b4',
               color: '#2d2418'
             }}
+            onClick={() => window.open('https://whop.com/checkout/v4THcoNRIiSffQEH7-0UCR-ow3k-cfm6-m8UNNwOgnbDB/', '_blank')}
           >
             Get My Digital Copy
           </Button>

@@ -113,12 +113,13 @@ const Index = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
+          <Button
             className="font-semibold px-[5vw] sm:px-6 py-2 rounded-full text-[3.8vw] sm:text-[15px] shadow-lg mb-[2vh] transition-all duration-300 hover:scale-105 border border-black"
-            style={{ 
+            style={{
               backgroundColor: '#ffffff',
               color: '#2d2418'
             }}
+            onClick={() => window.open('https://whop.com/checkout/v4THcoNRIiSffQEH7-0UCR-ow3k-cfm6-m8UNNwOgnbDB/', '_blank')}
           >
             Get My Digital Copy
           </Button>
