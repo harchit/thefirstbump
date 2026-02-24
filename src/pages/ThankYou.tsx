@@ -5,6 +5,12 @@ import { Heart, BookOpen, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+  }
+}
+
 const ThankYou = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   
@@ -15,6 +21,17 @@ const ThankYou = () => {
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
+
+    // Fire Facebook Pixel Purchase event
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Purchase', {
+        content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+        content_type: 'product',
+        currency: 'USD',
+        value: 0.00
+      });
+    }
+
     return () => clearTimeout(timer);
   }, []);
 
