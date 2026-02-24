@@ -154,19 +154,19 @@ const ThankYou = () => {
                 className="text-base sm:text-lg text-center"
                 style={{ color: '#ffffff', lineHeight: '1.6', fontWeight: 300 }}
               >
-                Take a deep breath. You've just taken a beautiful step toward feeling more grounded, informed, and confident in your pregnancy journey.
+                Take a breath. You’ve just taken a practical step toward feeling more informed and confident in your pregnancy.
               </p>
               <p 
                 className="text-base sm:text-lg text-center"
                 style={{ color: '#ffffff', lineHeight: '1.6', fontWeight: 300 }}
               >
-                This book was written with you in mind — the first-time mother who wants clarity without fear, guidance without overwhelm, and support that feels like a warm hand on your shoulder.
+                This book is written for first-time mothers who want clear, straightforward guidance without unnecessary fear or overwhelm.
               </p>
               <p 
                 className="text-base sm:text-lg text-center font-medium"
                 style={{ color: '#FBFE87', lineHeight: '1.6' }}
               >
-                Read at your own pace. Return to sections when you need them. Trust yourself — you already have everything you need within you.
+                Read it at your own pace. Revisit sections when needed and skip areas you deem irrelevant. Use it as a reference and make the choices that feel right for you.
               </p>
             </div>
           </div>
