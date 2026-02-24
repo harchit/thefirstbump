@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "What's Different With This?",
+    question: "What is The First Bump book?",
     answer: "The First Bump is a comprehensive pregnancy guide designed specifically for first-time mothers. It provides trimester-by-trimester guidance, emotional support tools, and evidence-based information to help you navigate your pregnancy journey with confidence and calm."
   },
   {
