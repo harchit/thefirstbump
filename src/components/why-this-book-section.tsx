@@ -42,7 +42,7 @@ const WhyThisBookSection = () => {
             lineHeight: '1.15'
           }}
         >
-          This isn't another generic pregnancy book. It's a grounded, emotionally supportive guide written specifically for first-time mothers — designed to replace confusion with clarity and fear with confidence.
+          This isn't a step-by-step to-do list. It's a grounded, emotionally supportive guide written specifically for first-time mothers — designed to replace confusion with clarity and fear with confidence.
         </p>
       </div>
     </div>
