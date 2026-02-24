@@ -9,11 +9,11 @@ const faqs = [
     answer: "The First Bump is a comprehensive pregnancy guide designed specifically for first-time mothers. It provides trimester-by-trimester guidance, emotional support tools, and evidence-based information to help you navigate your pregnancy journey with confidence and calm."
   },
   {
-    question: "How do I download The First Bump?",
+    question: "How Do I Access it?",
     answer: "After purchase, you'll receive instant access to download the PDF version of The First Bump. You can read it on any device—phone, tablet, or computer—and refer back to it whenever you need guidance throughout your pregnancy."
   },
   {
-    question: "What results can I expect from The First Bump book?",
+    question: "What Do I Walk Away With?",
     answer: "You'll gain clarity on what's happening in your body each trimester, learn to manage pregnancy anxiety, make confident decisions about testing and birth options, and feel prepared for labor and early motherhood. Many readers report feeling calmer and more informed after reading."
   },
   {
