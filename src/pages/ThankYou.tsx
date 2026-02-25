@@ -22,6 +22,16 @@ const ThankYou = () => {
       setIsLoaded(true);
     }, 100);
 
+    // Fire Facebook Pixel Purchase event on page load
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Purchase', {
+        content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+        content_type: 'product',
+        currency: 'USD',
+        value: 0.00
+      });
+    }
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -118,15 +128,6 @@ const ThankYou = () => {
                   border: 'none'
                 }}
                 onClick={() => {
-                  // Fire Facebook Pixel Purchase event on click
-                  if (typeof window !== 'undefined' && window.fbq) {
-                    window.fbq('track', 'Purchase', {
-                      content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
-                      content_type: 'product',
-                      currency: 'USD',
-                      value: 0.00
-                    });
-                  }
                   window.open('https://drive.google.com/uc?export=download&id=1qN6ylDlJ793ZKiiNx2v7j8Bzo7wTsQnu', '_blank');
                 }}
               >
