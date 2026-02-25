@@ -33,7 +33,7 @@ const StickyCtaButton = () => {
           color: "#ffffff",
           boxShadow: '0 0 12px rgba(255, 255, 255, 0.4)'
         }}
-        onClick={() => window.location.href = 'https://whop.com/checkout/v4THcoNRIiSffQEH7-0UCR-ow3k-cfm6-m8UNNwOgnbDB/'}
+        onClick={() => window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09'}
       >
         Get My Digital Copy
       </Button>
