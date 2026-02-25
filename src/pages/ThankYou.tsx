@@ -128,8 +128,7 @@ const ThankYou = () => {
                   border: 'none'
                 }}
                 onClick={() => {
-                  // This would be the actual download link
-                  console.log("Download triggered");
+                  window.open('https://drive.google.com/uc?export=download&id=1qN6ylDlJ793ZKiiNx2v7j8Bzo7wTsQnu', '_blank');
                 }}
               >
                 Click Here to Download
