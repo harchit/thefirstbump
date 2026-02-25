@@ -56,7 +56,7 @@ const ThankYou = () => {
         />
         
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center px-4 sm:px-5 pt-[4vh] pb-[4vh]">
+        <div className="relative z-10 flex flex-col items-center px-4 sm:px-5 pt-[4vh] pb-[6vh]">
           {/* Heart Icon */}
           <div 
             className={`mb-4 transition-all duration-1000 ease-out ${
@@ -104,16 +104,38 @@ const ThankYou = () => {
             />
           </div>
 
-          {/* Subtitle */}
-          <p 
-            className={`text-center text-[4vw] sm:text-[16px] max-w-[320px] transition-all duration-1000 ease-out delay-500 ${
-              isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-            }`}
-            style={{ color: '#ffffff', lineHeight: '1.4' }}
-          >
-            Your copy of <span className="italic">The First Bump</span> is ready.
-            <span className="block mt-1 opacity-90">Check Your Email for Confirmation</span>
-          </p>
+          {/* Subtitle & Download Button */}
+          <div className="flex flex-col items-center">
+            <p 
+              className={`text-center text-[4vw] sm:text-[16px] max-w-[320px] transition-all duration-1000 ease-out delay-500 ${
+                isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ color: '#ffffff', lineHeight: '1.4' }}
+            >
+              Your copy of <span className="italic">The First Bump</span> is ready.
+            </p>
+            
+            <div 
+              className={`mt-6 transition-all duration-1000 ease-out delay-700 ${
+                isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+            >
+              <Button
+                className="font-bold px-10 py-6 rounded-full text-lg transition-all duration-300 hover:scale-105 shadow-2xl"
+                style={{
+                  backgroundColor: '#FBFE87',
+                  color: '#2d3a2b',
+                  border: 'none'
+                }}
+                onClick={() => {
+                  // This would be the actual download link
+                  console.log("Download triggered");
+                }}
+              >
+                Click Here to Download
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
 
