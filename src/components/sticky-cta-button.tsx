@@ -3,6 +3,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+  }
+}
+
 const StickyCtaButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -33,7 +39,14 @@ const StickyCtaButton = () => {
           color: "#ffffff",
           boxShadow: '0 0 12px rgba(255, 255, 255, 0.4)'
         }}
-        onClick={() => window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09'}
+        onClick={() => {
+          if (window.fbq) {
+            window.fbq('track', 'InitiateCheckout');
+          }
+          setTimeout(() => {
+            window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09';
+          }, 300);
+        }}
       >
         Get My Digital Copy
       </Button>

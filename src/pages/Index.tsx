@@ -9,6 +9,12 @@ import ReviewsSection from "@/components/reviews-section";
 import FaqSection from "@/components/faq-section";
 import SlotCounter from "@/components/slot-counter";
 
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+  }
+}
+
 const Index = () => {
   const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
   const [isLoaded, setIsLoaded] = useState(false);
@@ -119,7 +125,14 @@ const Index = () => {
               backgroundColor: '#ffffff',
               color: '#2d2418'
             }}
-            onClick={() => window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09'}
+            onClick={() => {
+              if (window.fbq) {
+                window.fbq('track', 'InitiateCheckout');
+              }
+              setTimeout(() => {
+                window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09';
+              }, 300);
+            }}
           >
             Get My Digital Copy
           </Button>

@@ -4,6 +4,12 @@ import { Sparkles, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+  }
+}
+
 const JourneySection = () => {
   const heroCard = useFadeInOnScroll(0.1, 0);
   const card1 = useFadeInOnScroll(0.1, 150);
@@ -58,7 +64,14 @@ const JourneySection = () => {
               backgroundColor: '#c7c3b4',
               color: '#2d2418'
             }}
-            onClick={() => window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09'}
+            onClick={() => {
+              if (window.fbq) {
+                window.fbq('track', 'InitiateCheckout');
+              }
+              setTimeout(() => {
+                window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09';
+              }, 300);
+            }}
           >
             Get My Digital Copy
           </Button>
