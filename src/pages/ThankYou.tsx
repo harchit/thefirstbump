@@ -134,6 +134,15 @@ const ThankYou = () => {
                 Click Here to Download
               </Button>
             </div>
+            
+            <p 
+              className={`text-center text-[3.5vw] sm:text-[14px] mt-4 transition-all duration-1000 ease-out delay-[900ms] ${
+                isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+              }`}
+              style={{ color: '#ffffff', opacity: 0.8 }}
+            >
+              For issues, email support@thefirstbump.com
+            </p>
           </div>
         </div>
       </div>
