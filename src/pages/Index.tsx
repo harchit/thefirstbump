@@ -120,7 +120,7 @@ const Index = () => {
           </div>
 
           {/* CTA Button and Promo Text */}
-          <div className="flex flex-col items-center mb-[2vh]">
+          <div className="flex flex-col items-center mb-[1vh]">
             <Button
               className="font-semibold px-[5vw] sm:px-6 py-2 rounded-full text-[3.8vw] sm:text-[15px] shadow-lg transition-all duration-300 hover:scale-105 border border-black"
               style={{
@@ -146,7 +146,7 @@ const Index = () => {
             </p>
 
             {/* Promo Code Section */}
-            <div className="text-center mt-4 flex flex-col items-center">
+            <div className="text-center mt-2 flex flex-col items-center">
               <Button
                 onClick={() => setIsPromoRevealed(true)}
                 className={`font-semibold px-5 py-1.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
