@@ -157,6 +157,11 @@ const Index = () => {
             >
               {isPromoRevealed ? "BUMP1" : "Reveal Code"}
             </Button>
+            {isPromoRevealed && (
+              <p className="text-[3.2vw] sm:text-xs mt-1.5" style={{ color: '#ffffff', opacity: 0.9 }}>
+                Offer ends March 3rd
+              </p>
+            )}
           </div>
         </div>
       </div>
