@@ -144,7 +144,7 @@ const Index = () => {
           {/* Promo Code Section */}
           <div className="text-center mb-[1.5vh] flex flex-col items-center">
             <p className="text-[3.8vw] sm:text-base font-medium mb-1.5" style={{ color: '#ffffff' }}>
-              {isPromoRevealed ? "Use Code at Checkout" : "Click to reveal 15% promo code"}
+              {isPromoRevealed ? "Use Code at Checkout" : "Click for 15% Promo Code"}
             </p>
             <Button
               onClick={() => setIsPromoRevealed(true)}
