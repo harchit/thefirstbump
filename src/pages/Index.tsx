@@ -149,7 +149,7 @@ const Index = () => {
             <div className="text-center mt-2 flex flex-col items-center">
               <Button
                 onClick={() => setIsPromoRevealed(true)}
-                className={`font-semibold px-5 py-1.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
+                className={`font-semibold px-5 py-0.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
                 style={{ 
                   backgroundColor: isPromoRevealed ? '#ffffff' : 'transparent',
                   color: isPromoRevealed ? '#2d2418' : '#ffffff',
