@@ -18,7 +18,7 @@ const JourneySection = () => {
 
   return (
     <div 
-      className="w-full pt-12 pb-8 px-6"
+      className="w-full pt-6 pb-8 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
