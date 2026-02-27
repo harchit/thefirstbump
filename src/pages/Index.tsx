@@ -147,9 +147,6 @@ const Index = () => {
 
             {/* Promo Code Section */}
             <div className="text-center mt-4 flex flex-col items-center">
-              <p className="text-[3.5vw] sm:text-[14px] font-medium mb-1.5" style={{ color: '#ffffff' }}>
-                {isPromoRevealed ? "Use Code at Checkout" : "Click for 15% Promo Code"}
-              </p>
               <Button
                 onClick={() => setIsPromoRevealed(true)}
                 className={`font-semibold px-5 py-1.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
