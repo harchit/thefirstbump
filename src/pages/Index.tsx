@@ -143,12 +143,12 @@ const Index = () => {
 
           {/* Promo Code Section */}
           <div className="text-center mb-[1.5vh] flex flex-col items-center">
-            <p className="text-[3.5vw] sm:text-sm font-medium mb-1.5" style={{ color: '#ffffff' }}>
+            <p className="text-[3.8vw] sm:text-base font-medium mb-1.5" style={{ color: '#ffffff' }}>
               {isPromoRevealed ? "Use Code at Checkout" : "Click to reveal 15% promo code"}
             </p>
             <Button
               onClick={() => setIsPromoRevealed(true)}
-              className={`font-semibold px-4 py-1 h-auto rounded-full text-[3.2vw] sm:text-xs transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
+              className={`font-semibold px-5 py-1.5 h-auto rounded-full text-[3.5vw] sm:text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
               style={{ 
                 backgroundColor: isPromoRevealed ? '#ffffff' : 'transparent',
                 color: isPromoRevealed ? '#2d2418' : '#ffffff',
@@ -158,7 +158,7 @@ const Index = () => {
               {isPromoRevealed ? "BUMP1" : "Reveal Code"}
             </Button>
             {isPromoRevealed && (
-              <p className="text-[3.2vw] sm:text-xs mt-1.5" style={{ color: '#ffffff', opacity: 0.9 }}>
+              <p className="text-[3.5vw] sm:text-sm mt-1.5" style={{ color: '#ffffff', opacity: 0.9 }}>
                 Offer ends March 3rd
               </p>
             )}
