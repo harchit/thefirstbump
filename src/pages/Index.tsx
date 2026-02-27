@@ -118,27 +118,32 @@ const Index = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <Button
-            className="font-semibold px-[5vw] sm:px-6 py-2 rounded-full text-[3.8vw] sm:text-[15px] shadow-lg mb-[2vh] transition-all duration-300 hover:scale-105 border border-black"
-            style={{
-              backgroundColor: '#ffffff',
-              color: '#2d2418'
-            }}
-            onClick={() => {
-              if (window.fbq) {
-                window.fbq('track', 'InitiateCheckout');
-              }
-              if (window.ttq) {
-                window.ttq.track('InitiateCheckout');
-              }
-              setTimeout(() => {
-                window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09';
-              }, 300);
-            }}
-          >
-            Get My Digital Copy
-          </Button>
+          {/* CTA Button and Promo Text */}
+          <div className="flex flex-col items-center mb-[2vh]">
+            <Button
+              className="font-semibold px-[5vw] sm:px-6 py-2 rounded-full text-[3.8vw] sm:text-[15px] shadow-lg transition-all duration-300 hover:scale-105 border border-black"
+              style={{
+                backgroundColor: '#ffffff',
+                color: '#2d2418'
+              }}
+              onClick={() => {
+                if (window.fbq) {
+                  window.fbq('track', 'InitiateCheckout');
+                }
+                if (window.ttq) {
+                  window.ttq.track('InitiateCheckout');
+                }
+                setTimeout(() => {
+                  window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09';
+                }, 300);
+              }}
+            >
+              Get My Digital Copy
+            </Button>
+            <p className="text-center text-[3.5vw] sm:text-[14px] mt-2" style={{ color: '#ffffff', opacity: 0.9 }}>
+              15% Promo Ends March 3rd
+            </p>
+          </div>
         </div>
       </div>
 
