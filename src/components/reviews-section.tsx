@@ -173,6 +173,18 @@ const ReviewsSection = () => {
             <ChevronRight className="w-4 h-4" />
           </Button>
         </div>
+
+        {/* Support Email */}
+        <p 
+          className="text-center text-sm mt-8"
+          style={{ 
+            color: '#3d4a3a',
+            opacity: 0.7,
+            fontWeight: 300
+          }}
+        >
+          For issues, email support@thefirstbump.com
+        </p>
       </div>
     </div>
   );
