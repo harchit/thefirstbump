@@ -7,6 +7,7 @@ import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 declare global {
   interface Window {
     fbq: (...args: unknown[]) => void;
+    ttq: any;
   }
 }
 
@@ -67,6 +68,9 @@ const JourneySection = () => {
             onClick={() => {
               if (window.fbq) {
                 window.fbq('track', 'InitiateCheckout');
+              }
+              if (window.ttq) {
+                window.ttq.track('InitiateCheckout');
               }
               setTimeout(() => {
                 window.location.href = 'https://buy.stripe.com/3cIeVdcYG4YFdfw1m8gnK09';
