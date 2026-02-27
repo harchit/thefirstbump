@@ -2,6 +2,8 @@
 
 import { Calendar, Heart, Shield, CheckSquare } from "lucide-react";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const DiscoverSection = () => {
   const feature1 = useFadeInOnScroll(0.1, 0);
@@ -9,6 +11,7 @@ const DiscoverSection = () => {
   const feature3 = useFadeInOnScroll(0.1, 200);
   const feature4 = useFadeInOnScroll(0.1, 300);
   const quote = useFadeInOnScroll(0.1, 400);
+  const [isPromoRevealed, setIsPromoRevealed] = useState(false);
 
   return (
     <div 
@@ -214,6 +217,29 @@ const DiscoverSection = () => {
         >
           "When your heart is calm, your baby feels peace."
         </blockquote>
+
+        {/* Promo Code Section */}
+        <div className="text-center mt-12 flex flex-col items-center">
+          <p className="text-base font-medium mb-1.5" style={{ color: '#3d4a3a' }}>
+            {isPromoRevealed ? "Use Code at Checkout" : "Click for 15% Promo Code"}
+          </p>
+          <Button
+            onClick={() => setIsPromoRevealed(true)}
+            className={`font-semibold px-5 py-1.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
+            style={{ 
+              backgroundColor: isPromoRevealed ? '#3d4a3a' : 'transparent',
+              color: isPromoRevealed ? '#EAEEE1' : '#3d4a3a',
+              border: '1.5px solid #3d4a3a'
+            }}
+          >
+            {isPromoRevealed ? "BUMP1" : "Reveal Code"}
+          </Button>
+          {isPromoRevealed && (
+            <p className="text-sm mt-1.5" style={{ color: '#3d4a3a', opacity: 0.9 }}>
+              Offer ends March 3rd
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );
