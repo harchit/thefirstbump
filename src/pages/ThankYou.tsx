@@ -8,6 +8,7 @@ import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 declare global {
   interface Window {
     fbq: (...args: unknown[]) => void;
+    ttq: any;
   }
 }
 
@@ -25,6 +26,16 @@ const ThankYou = () => {
     // Fire Facebook Pixel Purchase event on page load
     if (typeof window !== 'undefined' && window.fbq) {
       window.fbq('track', 'Purchase', {
+        content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+        content_type: 'product',
+        currency: 'USD',
+        value: 0.00
+      });
+    }
+
+    // Fire TikTok Pixel Purchase event on page load
+    if (typeof window !== 'undefined' && window.ttq) {
+      window.ttq.track('CompletePayment', {
         content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
         content_type: 'product',
         currency: 'USD',
