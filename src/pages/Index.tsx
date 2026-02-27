@@ -140,7 +140,7 @@ const Index = () => {
             >
               Get My Digital Copy
             </Button>
-            <p className="text-center text-[3.5vw] sm:text-[14px] mt-2" style={{ color: '#ffffff', opacity: 0.9 }}>
+            <p className="text-center text-[3.8vw] sm:text-[15px] mt-2 font-semibold" style={{ color: '#ffffff', opacity: 0.9 }}>
               15% Promo Ends March 3rd
             </p>
           </div>
