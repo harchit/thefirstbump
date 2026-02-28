@@ -23,23 +23,39 @@ const ThankYou = () => {
       setIsLoaded(true);
     }, 100);
 
-    // Fire Facebook Pixel Purchase event on page load
-    if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Purchase', {
-        content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
-        content_type: 'product',
-        currency: 'USD',
-        value: 0.00
-      });
+    // Get Stripe Session ID from URL
+    const searchParams = new URLSearchParams(window.location.search);
+    const sessionId = searchParams.get('session_id');
+
+    // Meta Pixel Deduplication Logic
+    if (sessionId) {
+      const storageKey = `fb_purchase_${sessionId}`;
+      const hasFired = localStorage.getItem(storageKey);
+
+      if (!hasFired) {
+        // Fire Facebook Pixel Purchase event
+        if (typeof window !== 'undefined' && window.fbq) {
+          window.fbq('track', 'Purchase', {
+            content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+            content_type: 'product',
+            currency: 'USD',
+            value: 29.99
+          }, { eventID: sessionId });
+        }
+        
+        // Mark as fired in localStorage to prevent duplicates
+        localStorage.setItem(storageKey, 'true');
+      }
     }
 
     // Fire TikTok Pixel Purchase event on page load
+    // Keeping this independent as per current requirements, but updated value to match
     if (typeof window !== 'undefined' && window.ttq) {
       window.ttq.track('CompletePayment', {
         content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
         content_type: 'product',
         currency: 'USD',
-        value: 0.00
+        value: 29.99
       });
     }
 
