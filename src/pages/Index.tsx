@@ -100,7 +100,7 @@ const Index = () => {
 
           {/* E-Book Label - Separate from book container */}
           <p className="text-center text-[3.5vw] sm:text-[14px] mb-[2vh]" style={{ color: '#ffffff' }}>
-            Complete E-Guide
+            Complete E-Guide (PDF)
           </p>
 
           {/* Benefits List */}
