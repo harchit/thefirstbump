@@ -39,7 +39,7 @@ const ThankYou = () => {
             content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
             content_type: 'product',
             currency: 'USD',
-            value: 24.99
+            value: 16.99
           }, { eventID: sessionId });
         }
         
@@ -55,7 +55,7 @@ const ThankYou = () => {
         content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
         content_type: 'product',
         currency: 'USD',
-        value: 24.99
+        value: 16.99
       });
     }
 
