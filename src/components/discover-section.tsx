@@ -46,7 +46,7 @@ const DiscoverSection = () => {
             letterSpacing: '-0.01em'
           }}
         >
-          Inside <span className="font-medium">The First Bump</span>, you'll gain clear, grounded guidance for every stage of pregnancy — from the first uncertain weeks to the moment labor begins. This isn't fluff or fear-based advice. It's structured, science-backed clarity designed for modern first-time mothers.
+          <span className="font-medium">The First Bump</span> was designed to help you gain clear, grounded guidance for every stage of pregnancy — from the first uncertain weeks to the moment labor begins. This isn't fluff or fear-based advice. It's structured, science-backed clarity designed for modern first-time mothers.
         </p>
 
         {/* Feature Items */}
@@ -236,7 +236,7 @@ const DiscoverSection = () => {
           </Button>
           {isPromoRevealed && (
             <p className="text-sm mt-1.5" style={{ color: '#3d4a3a', opacity: 0.9 }}>
-              Offer ends March 3rd
+              Offer ends March 1st
             </p>
           )}
         </div>
