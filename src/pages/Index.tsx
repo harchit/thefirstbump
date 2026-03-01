@@ -142,7 +142,7 @@ const Index = () => {
               Get My Digital Copy
             </Button>
             <p className="text-center text-[3.8vw] sm:text-[15px] mt-2 font-semibold" style={{ color: '#ffffff', opacity: 0.9 }}>
-              15% Promo Ends March 3rd
+              15% Promo Ends March 1st
             </p>
 
             {/* Promo Code Section */}
