@@ -7,31 +7,31 @@ import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 const reviews = [
   {
-    text: "I stopped Googling every symptom after reading this. It made me feel calm and informed instead of anxious.",
+    text: "Actually felt informed and not anxious. Stopped googling every small question I had",
     author: "Emily R., 29",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   },
   {
-    text: "Clear, evidence-based, and reassuring. Exactly what I wanted as a first-time mom.",
+    text: "Every mom should read something like this, even if not this book in particular",
     author: "Samantha L., 34",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
   },
   {
-    text: "So organized and easy to reference. The red flag sections were especially helpful.",
+    text: "It felt grounded and honest. Lots of stuff I didn’t know about how pregnancy worked",
     author: "Danielle M., 31",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
   },
   {
-    text: "It felt grounded and honest. I actually felt more prepared after finishing it.",
+    text: "Clearly written and reassuring. Exactly what I wanted as a first-time mom",
     author: "Priya S., 27",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
   },
   {
-    text: "Practical, calm, and not overwhelming. I wish I had this earlier in my pregnancy.",
+    text: "Pretty organized and easy to reference. The red flag sections were really helpful.",
     author: "Hannah T., 36",
     bgColor: "#2D3A2B",
     textColor: "#ffffff"
