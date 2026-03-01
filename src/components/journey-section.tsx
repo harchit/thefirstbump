@@ -73,7 +73,7 @@ const JourneySection = () => {
                 window.ttq.track('InitiateCheckout');
               }
               setTimeout(() => {
-                window.location.href = 'https://buy.stripe.com/4gMaEX4sa76NfnE7KwgnK0a';
+                window.location.href = 'https://buy.stripe.com/bJe9ATcYGdvbfnE1m8gnK0b';
               }, 300);
             }}
           >
