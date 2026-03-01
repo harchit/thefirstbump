@@ -109,7 +109,7 @@ const ReviewsSection = () => {
             fontWeight: 300
           }}
         >
-          Discover how <span className="italic">The First Bump</span> is informing mothers—one page at a time.
+          Discover how <span className="italic">The First Bump</span> is helping mothers—one page at a time.
         </p>
 
         {/* Review Card Container with Overflow Hidden */}
