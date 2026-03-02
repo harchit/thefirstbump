@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
@@ -87,6 +87,30 @@ const ReviewsSection = () => {
             : 'opacity-0 translate-y-8'
         }`}
       >
+        {/* This Guide Helps You Section */}
+        <div className="mb-16 p-8 rounded-3xl" style={{ backgroundColor: '#E8E6DC' }}>
+          <h3 
+            className="text-2xl font-light mb-6 text-center"
+            style={{ color: '#3d4a3a', lineHeight: '1.2' }}
+          >
+            This Guide Helps You:
+          </h3>
+          <div className="space-y-4 max-w-[300px] mx-auto">
+            {[
+              "Know what’s normal vs when to call your provider",
+              "Reduce anxiety-driven Googling",
+              "Feel confident making pregnancy decisions",
+              "Understand your changing body",
+              "Prepare mentally for labor"
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3" style={{ color: '#3d4a3a' }}>
+                <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#2D3A2B]" />
+                <p className="text-base font-light leading-snug">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Heading */}
         <h2 
           className="text-4xl sm:text-5xl font-light text-center mb-3"
