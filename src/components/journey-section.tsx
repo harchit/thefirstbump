@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 declare global {
@@ -77,10 +77,10 @@ const JourneySection = () => {
       }}
     >
       <div className="max-w-md mx-auto space-y-10">
-        {/* Hero Card */}
+        {/* Who This is For Card */}
         <div 
           ref={heroCard.ref}
-          className={`rounded-3xl p-8 text-center transition-all duration-700 ease-out ${
+          className={`rounded-3xl p-8 transition-all duration-700 ease-out ${
             heroCard.isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
@@ -90,44 +90,26 @@ const JourneySection = () => {
           }}
         >
           <h2 
-            className="text-3xl sm:text-4xl font-light mb-2"
+            className="text-2xl font-light mb-6 text-center"
             style={{ 
               color: '#ffffff',
               lineHeight: '1.2'
             }}
           >
-            Begin your motherhood journey
+            Who This is For
           </h2>
-          <p 
-            className="text-base mb-6"
-            style={{ 
-              color: '#ffffff',
-              lineHeight: '1.5',
-              opacity: 0.9
-            }}
-          >
-            If your heart is seeking guidance... this is where it begins.
-          </p>
-          <Button
-            className="font-normal px-8 py-5 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105"
-            style={{
-              backgroundColor: '#c7c3b4',
-              color: '#2d2418'
-            }}
-            onClick={() => {
-              if (window.fbq) {
-                window.fbq('track', 'InitiateCheckout');
-              }
-              if (window.ttq) {
-                window.ttq.track('InitiateCheckout');
-              }
-              setTimeout(() => {
-                window.location.href = 'https://buy.stripe.com/4gM7sLaQy4YFdfwaWIgnK0c';
-              }, 300);
-            }}
-          >
-            Get My Digital Copy
-          </Button>
+          <div className="space-y-4 max-w-[280px] mx-auto">
+            {[
+              "You’re a first-time mom who wants calm confidence",
+              "You feel overwhelmed by conflicting advice",
+              "You want clarity without fear-based messaging"
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3 text-white/90">
+                <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#c7c3b4]" />
+                <p className="text-base font-light leading-snug text-left">{item}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Table of Contents Section */}
