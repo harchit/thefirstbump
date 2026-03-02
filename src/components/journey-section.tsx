@@ -1,6 +1,5 @@
 "use client";
 
-import { Sparkles, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
@@ -11,14 +10,64 @@ declare global {
   }
 }
 
+const chapters = [
+  {
+    title: "Chapter 1: The Biology & The Immediate Pivot",
+    description: "Understand what’s happening in your body — and how to adjust without overwhelm."
+  },
+  {
+    title: "Chapter 2: The First Trimester – Survival Mode",
+    description: "Navigate fatigue, fear, and uncertainty with calm clarity."
+  },
+  {
+    title: "Chapter 3: Pregnancy & Your Mental Landscape",
+    description: "Make sense of anxiety, identity shifts, and emotional changes."
+  },
+  {
+    title: "Chapter 4: The Physical Shift (Second Trimester)",
+    description: "Know what’s normal as your body changes — and what’s not."
+  },
+  {
+    title: "Chapter 5: Testing Without Spiraling",
+    description: "Understand screenings and make decisions without fear."
+  },
+  {
+    title: "Chapter 6: Physical Endurance (Third Trimester)",
+    description: "Manage discomfort and recognize true labor signs."
+  },
+  {
+    title: "Chapter 7: Preparing for Birth",
+    description: "Build flexible birth preferences and mental readiness."
+  },
+  {
+    title: "Chapter 8: Practical Preparation",
+    description: "Get ready for baby without overbuying or overthinking."
+  },
+  {
+    title: "Chapter 9: What Labor Actually Looks Like",
+    description: "Know what to expect so birth feels less unknown."
+  },
+  {
+    title: "Chapter 10: “Is This Normal?”",
+    description: "Quick clarity on symptoms, moods, and body changes."
+  },
+  {
+    title: "Chapter 11: Myth-Busting for Modern Mothers",
+    description: "Cut through outdated advice and internet noise."
+  },
+  {
+    title: "Chapter 12: For Partners",
+    description: "Help your partner show up with confidence and support."
+  }
+];
+
 const JourneySection = () => {
   const heroCard = useFadeInOnScroll(0.1, 0);
-  const card1 = useFadeInOnScroll(0.1, 150);
-  const card2 = useFadeInOnScroll(0.1, 300);
+  const tocSection = useFadeInOnScroll(0.1, 150);
 
   return (
     <div 
-      className="w-full pt-6 pb-8 px-6"
+      className="w-full pt-6 pb-12 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -27,7 +76,7 @@ const JourneySection = () => {
         lineHeight: '1.4'
       }}
     >
-      <div className="max-w-md mx-auto space-y-6">
+      <div className="max-w-md mx-auto space-y-10">
         {/* Hero Card */}
         <div 
           ref={heroCard.ref}
@@ -81,82 +130,40 @@ const JourneySection = () => {
           </Button>
         </div>
 
-        {/* Card 1 - Nurturing Your Connection */}
+        {/* Table of Contents Section */}
         <div 
-          ref={card1.ref}
-          className={`rounded-3xl p-5 text-center transition-all duration-700 ease-out ${
-            card1.isVisible 
+          ref={tocSection.ref}
+          className={`transition-all duration-700 ease-out ${
+            tocSection.isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
           }`}
-          style={{ 
-            backgroundColor: '#e8e6dc'
-          }}
         >
-          <div className="flex justify-center mb-2">
-            <Sparkles 
-              className="w-8 h-8" 
-              style={{ color: '#3d4a3a' }}
-              strokeWidth={1.5}
-            />
-          </div>
           <h3 
-            className="text-2xl font-normal mb-1"
-            style={{ 
-              color: '#3d4a3a',
-              lineHeight: '1.2'
-            }}
+            className="text-3xl font-light text-center mb-8"
+            style={{ color: '#3d4a3a' }}
           >
-            Nurturing Your Connection
+            Inside the Guide
           </h3>
-          <p 
-            className="text-base"
-            style={{ 
-              color: '#3d4a3a',
-              lineHeight: '1.3'
-            }}
-          >
-            Deepen the bond with your baby through mindful practices
-          </p>
-        </div>
-
-        {/* Card 2 - Embrace Your Transformation */}
-        <div 
-          ref={card2.ref}
-          className={`rounded-3xl p-5 text-center transition-all duration-700 ease-out ${
-            card2.isVisible 
-              ? 'opacity-100 translate-y-0' 
-              : 'opacity-0 translate-y-8'
-          }`}
-          style={{ 
-            backgroundColor: '#e8e6dc'
-          }}
-        >
-          <div className="flex justify-center mb-2">
-            <Sun 
-              className="w-8 h-8" 
-              style={{ color: '#3d4a3a' }}
-              strokeWidth={1.5}
-            />
+          
+          <div className="space-y-8">
+            {chapters.map((chapter, index) => (
+              <div key={index} className="border-b border-[#3d4a3a]/10 pb-6 last:border-0">
+                <h4 
+                  className="text-lg font-medium mb-1"
+                  style={{ color: '#3d4a3a' }}
+                >
+                  {chapter.title}
+                </h4>
+                <p 
+                  className="text-base"
+                  style={{ color: '#3d4a3a', opacity: 0.8 }}
+                >
+                  {chapter.description}
+                </p>
+              </div>
+            ))}
           </div>
-          <h3 
-            className="text-2xl font-normal mb-1"
-            style={{ 
-              color: '#3d4a3a',
-              lineHeight: '1.2'
-            }}
-          >
-            Embrace Your Transformation
-          </h3>
-          <p 
-            className="text-base"
-            style={{ 
-              color: '#3d4a3a',
-              lineHeight: '1.3'
-            }}
-          >
-            Find peace and clarity as you step into motherhood
-          </p>
         </div>
       </div>
     </div>
