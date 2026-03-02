@@ -153,13 +153,13 @@ const JourneySection = () => {
             {chapters.map((chapter, index) => (
               <div key={index} className="border-b border-[#3d4a3a]/10 pb-4 last:border-0">
                 <h4 
-                  className="text-lg font-medium mb-0.5"
+                  className="text-sm sm:text-base font-medium mb-0.5"
                   style={{ color: '#3d4a3a' }}
                 >
                   {chapter.title}
                 </h4>
                 <p 
-                  className="text-base"
+                  className="text-sm sm:text-base"
                   style={{ color: '#3d4a3a', opacity: 0.8 }}
                 >
                   {chapter.description}
