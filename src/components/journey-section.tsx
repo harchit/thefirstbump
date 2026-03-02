@@ -80,7 +80,7 @@ const JourneySection = () => {
         {/* Who This is For Card */}
         <div 
           ref={heroCard.ref}
-          className={`rounded-3xl p-8 transition-all duration-700 ease-out ${
+          className={`rounded-3xl p-8 max-w-sm mx-auto transition-all duration-700 ease-out ${
             heroCard.isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
@@ -90,7 +90,7 @@ const JourneySection = () => {
           }}
         >
           <h2 
-            className="text-2xl font-light mb-6 text-center"
+            className="text-3xl font-semibold mb-6 text-center"
             style={{ 
               color: '#ffffff',
               lineHeight: '1.2'
