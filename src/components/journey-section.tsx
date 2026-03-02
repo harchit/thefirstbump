@@ -42,7 +42,7 @@ const chapters = [
   },
   {
     title: "Chapter 8: Practical Preparation",
-    description: "Get ready for baby without overbuying or overthinking."
+    description: "Get ready without overbuying or overthinking"
   },
   {
     title: "Chapter 9: What Labor Actually Looks Like",
