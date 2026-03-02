@@ -100,7 +100,7 @@ const JourneySection = () => {
           </h2>
           <div className="space-y-4 max-w-[280px] mx-auto">
             {[
-              "You’re a first-time mom who wants calm confidence",
+              "You’re a first-time mom who wants pregnancy clarity",
               "You feel overwhelmed by conflicting advice",
               "You want clarity without fear-based messaging"
             ].map((item, i) => (
