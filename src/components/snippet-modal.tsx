@@ -28,7 +28,7 @@ const SnippetModal = ({ isOpen, onClose }: SnippetModalProps) => {
         </div>
         <div className="p-6 border-t bg-gray-50 text-center flex-shrink-0">
           <p className="text-lg font-medium mb-4 text-slate-800">
-            Like what you're reading? Get the full guide instantly.
+            Like what you're reading? Download the full guide below
           </p>
           <Button
             className="font-semibold px-8 py-3 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105"
