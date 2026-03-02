@@ -95,7 +95,7 @@ const ReviewsSection = () => {
           >
             This Guide Helps You:
           </h3>
-          <div className="space-y-4 max-w-[300px] mx-auto">
+          <div className="space-y-2.5 max-w-[300px] mx-auto">
             {[
               "Know what’s normal vs when to call your provider",
               "Reduce anxiety-driven Googling",
@@ -105,7 +105,7 @@ const ReviewsSection = () => {
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3" style={{ color: '#3d4a3a' }}>
                 <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#2D3A2B]" />
-                <p className="text-base font-light leading-snug">{item}</p>
+                <p className="text-base font-light leading-tight">{item}</p>
               </div>
             ))}
           </div>
