@@ -30,7 +30,7 @@ const chapters = [
   },
   {
     title: "Chapter 5: Testing Without Spiraling",
-    description: "Understand screenings and make decisions without fear."
+    description: "Understand screenings, make decisions confidently"
   },
   {
     title: "Chapter 6: Physical Endurance (Third Trimester)",
