@@ -68,7 +68,7 @@ const JourneySection = () => {
 
   return (
     <div 
-      className="w-full pt-6 pb-12 px-6"
+      className="w-full pt-6 pb-6 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -77,7 +77,7 @@ const JourneySection = () => {
         lineHeight: '1.4'
       }}
     >
-      <div className="max-w-md mx-auto space-y-10">
+      <div className="max-w-md mx-auto space-y-8">
         {/* Who This is For Card */}
         <div 
           ref={heroCard.ref}
@@ -132,7 +132,7 @@ const JourneySection = () => {
             Inside the Guide
           </h3>
           
-          <div className="space-y-4 mb-10">
+          <div className="space-y-4 mb-4">
             {chapters.map((chapter, index) => (
               <div key={index} className="border-b border-[#3d4a3a]/10 pb-4 last:border-0">
                 <h4 
