@@ -19,7 +19,6 @@ declare global {
 const Index = () => {
   const sfProFont = '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isPromoRevealed, setIsPromoRevealed] = useState(false);
 
   useEffect(() => {
     // Trigger animation after component mounts
@@ -142,23 +141,8 @@ const Index = () => {
               Get Instant Access
             </Button>
             <p className="text-center text-[3.8vw] sm:text-[15px] mt-2 font-semibold" style={{ color: '#ffffff', opacity: 0.9 }}>
-              15% Promo Ends March 2nd
+              20% Promo Ends March 5th
             </p>
-
-            {/* Promo Code Section */}
-            <div className="text-center mt-2 flex flex-col items-center">
-              <Button
-                onClick={() => setIsPromoRevealed(true)}
-                className={`font-semibold px-5 py-0.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
-                style={{ 
-                  backgroundColor: isPromoRevealed ? '#ffffff' : 'transparent',
-                  color: isPromoRevealed ? '#2d2418' : '#ffffff',
-                  border: '1.5px solid #ffffff'
-                }}
-              >
-                {isPromoRevealed ? "BUMP1" : "Reveal Code"}
-              </Button>
-            </div>
           </div>
         </div>
       </div>
