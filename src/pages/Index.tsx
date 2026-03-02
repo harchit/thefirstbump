@@ -139,7 +139,7 @@ const Index = () => {
                 }, 300);
               }}
             >
-              Get My Digital Copy
+              Get Instant Access
             </Button>
             <p className="text-center text-[3.8vw] sm:text-[15px] mt-2 font-semibold" style={{ color: '#ffffff', opacity: 0.9 }}>
               15% Promo Ends March 2nd
