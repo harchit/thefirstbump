@@ -50,7 +50,7 @@ const chapters = [
   },
   {
     title: "Chapter 10: “Is This Normal?”",
-    description: "Quick clarity on symptoms, moods, and body changes."
+    description: "Clarity on symptoms, moods, & body changes"
   },
   {
     title: "Chapter 11: Myth-Busting for Modern Mothers",
