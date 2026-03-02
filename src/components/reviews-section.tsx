@@ -90,7 +90,7 @@ const ReviewsSection = () => {
         {/* This Guide Helps You Section */}
         <div className="mb-12 p-6 rounded-3xl max-w-sm mx-auto" style={{ backgroundColor: '#E8E6DC' }}>
           <h3 
-            className="text-2xl font-bold mb-4 text-center"
+            className="text-2xl font-semibold mb-4 text-center"
             style={{ color: '#3d4a3a', lineHeight: '1.1' }}
           >
             This Guide Helps You:
