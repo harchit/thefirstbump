@@ -1,6 +1,7 @@
 "use client";
 
 import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 declare global {
@@ -67,7 +68,7 @@ const JourneySection = () => {
 
   return (
     <div 
-      className="w-full pt-6 pb-4 px-6"
+      className="w-full pt-6 pb-12 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -131,7 +132,7 @@ const JourneySection = () => {
             Inside the Guide
           </h3>
           
-          <div className="space-y-4">
+          <div className="space-y-4 mb-10">
             {chapters.map((chapter, index) => (
               <div key={index} className="border-b border-[#3d4a3a]/10 pb-4 last:border-0">
                 <h4 
@@ -148,6 +149,23 @@ const JourneySection = () => {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* Read Snippet Button */}
+          <div className="flex justify-center">
+            <Button
+              className="font-semibold px-8 py-2 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105 border border-black"
+              style={{
+                backgroundColor: '#ffffff',
+                color: '#2d2418'
+              }}
+              onClick={() => {
+                // Placeholder for snippet functionality
+                console.log("Read Snippet clicked");
+              }}
+            >
+              Read Snippet
+            </Button>
           </div>
         </div>
       </div>
