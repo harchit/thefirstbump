@@ -2,20 +2,16 @@
 
 import { Calendar, Heart, Shield, CheckSquare } from "lucide-react";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
 
 const DiscoverSection = () => {
   const feature1 = useFadeInOnScroll(0.1, 0);
   const feature2 = useFadeInOnScroll(0.1, 100);
   const feature3 = useFadeInOnScroll(0.1, 200);
   const feature4 = useFadeInOnScroll(0.1, 300);
-  const quote = useFadeInOnScroll(0.1, 400);
-  const [isPromoRevealed, setIsPromoRevealed] = useState(false);
 
   return (
     <div 
-      className="w-full pt-6 pb-6 px-6"
+      className="w-full pt-6 pb-12 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #DBE2CC 0%, #EAEEE1 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -50,7 +46,7 @@ const DiscoverSection = () => {
         </p>
 
         {/* Feature Items */}
-        <div className="space-y-10 mb-12">
+        <div className="space-y-10">
           {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div 
             ref={feature1.ref}
@@ -200,45 +196,6 @@ const DiscoverSection = () => {
               What you truly need, how to prepare for labor, and when to call your provider.
             </p>
           </div>
-        </div>
-
-        {/* Quote */}
-        <blockquote 
-          ref={quote.ref}
-          className={`text-center text-2xl sm:text-3xl font-light transition-all duration-700 ease-out ${
-            quote.isVisible 
-              ? 'opacity-100 translate-y-0' 
-              : 'opacity-0 translate-y-8'
-          }`}
-          style={{ 
-            color: '#3d4a3a',
-            lineHeight: '1.15'
-          }}
-        >
-          "When your heart is calm, your baby feels peace."
-        </blockquote>
-
-        {/* Promo Code Section */}
-        <div className="text-center mt-12 flex flex-col items-center">
-          <p className="text-base font-medium mb-1.5" style={{ color: '#3d4a3a' }}>
-            {isPromoRevealed ? "Use Code at Checkout" : "Click for 15% Promo Code"}
-          </p>
-          <Button
-            onClick={() => setIsPromoRevealed(true)}
-            className={`font-semibold px-5 py-1.5 h-auto rounded-full text-sm transition-all duration-300 ${!isPromoRevealed ? 'hover:scale-105 cursor-pointer' : 'cursor-default'}`}
-            style={{ 
-              backgroundColor: isPromoRevealed ? '#3d4a3a' : 'transparent',
-              color: isPromoRevealed ? '#EAEEE1' : '#3d4a3a',
-              border: '1.5px solid #3d4a3a'
-            }}
-          >
-            {isPromoRevealed ? "BUMP1" : "Reveal Code"}
-          </Button>
-          {isPromoRevealed && (
-            <p className="text-sm mt-1.5" style={{ color: '#3d4a3a', opacity: 0.9 }}>
-              Offer ends March 1st
-            </p>
-          )}
         </div>
       </div>
     </div>
