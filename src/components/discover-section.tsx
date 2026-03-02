@@ -65,7 +65,7 @@ const DiscoverSection = () => {
               />
             </div>
             <h3 
-              className="text-sm font-semibold mb-1 px-2"
+              className="text-base font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
@@ -74,7 +74,7 @@ const DiscoverSection = () => {
               Trimester Clarity
             </h3>
             <p 
-              className="text-xs px-1"
+              className="text-sm px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
@@ -104,7 +104,7 @@ const DiscoverSection = () => {
               />
             </div>
             <h3 
-              className="text-sm font-semibold mb-1 px-2"
+              className="text-base font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
@@ -113,7 +113,7 @@ const DiscoverSection = () => {
               Emotional Tools
             </h3>
             <p 
-              className="text-xs px-1"
+              className="text-sm px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
@@ -140,7 +140,7 @@ const DiscoverSection = () => {
               />
             </div>
             <h3 
-              className="text-sm font-semibold mb-1 px-2"
+              className="text-base font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
@@ -149,7 +149,7 @@ const DiscoverSection = () => {
               Confident Decisions
             </h3>
             <p 
-              className="text-xs px-1"
+              className="text-sm px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
@@ -179,7 +179,7 @@ const DiscoverSection = () => {
               />
             </div>
             <h3 
-              className="text-sm font-semibold mb-1 px-2"
+              className="text-base font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
@@ -188,7 +188,7 @@ const DiscoverSection = () => {
               Practical Prep
             </h3>
             <p 
-              className="text-xs px-1"
+              className="text-sm px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
