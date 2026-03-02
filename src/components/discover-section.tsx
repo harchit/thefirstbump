@@ -146,7 +146,7 @@ const DiscoverSection = () => {
                 lineHeight: '1.15'
               }}
             >
-              Confident Decisions
+              Calm Confidence
             </h3>
             <p 
               className="text-sm px-1"
