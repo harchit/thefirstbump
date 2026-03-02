@@ -88,14 +88,14 @@ const ReviewsSection = () => {
         }`}
       >
         {/* This Guide Helps You Section */}
-        <div className="mb-16 p-8 rounded-3xl" style={{ backgroundColor: '#E8E6DC' }}>
+        <div className="mb-12 p-6 rounded-3xl" style={{ backgroundColor: '#E8E6DC' }}>
           <h3 
-            className="text-2xl font-light mb-6 text-center"
-            style={{ color: '#3d4a3a', lineHeight: '1.2' }}
+            className="text-2xl font-light mb-4 text-center"
+            style={{ color: '#3d4a3a', lineHeight: '1.1' }}
           >
             This Guide Helps You:
           </h3>
-          <div className="space-y-2.5 max-w-[300px] mx-auto">
+          <div className="space-y-2 max-w-[300px] mx-auto">
             {[
               "Know what’s normal vs when to call your provider",
               "Reduce anxiety-driven Googling",
