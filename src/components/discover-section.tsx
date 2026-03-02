@@ -36,18 +36,18 @@ const DiscoverSection = () => {
 
         {/* Intro Paragraph */}
         <p 
-          className="text-center text-base sm:text-lg mb-8"
+          className="text-center text-base sm:text-lg mb-10"
           style={{ 
             color: '#3d4a3a',
             lineHeight: '1.25',
             letterSpacing: '-0.01em'
           }}
         >
-          The First Bump was designed to help you gain clear, grounded guidance for every stage of pregnancy — from the first uncertain weeks to the moment labor begins. It's structured, science-backed clarity designed for modern first-time mothers.
+          The First Bump was designed to help you gain clear, grounded guidance for every stage of pregnancy — from the first uncertain weeks to the moment labor begins.
         </p>
 
-        {/* Feature Items */}
-        <div className="space-y-10 mb-12">
+        {/* Feature Items - Grid Layout */}
+        <div className="grid grid-cols-2 gap-x-4 gap-y-10 mb-12">
           {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div 
             ref={feature1.ref}
@@ -59,28 +59,28 @@ const DiscoverSection = () => {
           >
             <div className="mb-2">
               <Calendar 
-                className="w-12 h-12" 
+                className="w-10 h-10" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-1"
+              className="text-sm font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
               }}
             >
-              Trimester-by-Trimester Clarity
+              Trimester Clarity
             </h3>
             <p 
-              className="text-base max-w-xs"
+              className="text-xs px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
               }}
             >
-              What's happening in your body, what's normal, and when to pay attention.
+              What's happening in your body and what's normal.
             </p>
           </div>
 
@@ -94,32 +94,32 @@ const DiscoverSection = () => {
             }`}
           >
             <div 
-              className="mb-2 w-12 h-12 rounded-xl flex items-center justify-center border-2"
+              className="mb-2 w-10 h-10 rounded-xl flex items-center justify-center border-2"
               style={{ borderColor: '#3d4a3a' }}
             >
               <Heart 
-                className="w-6 h-6" 
+                className="w-5 h-5" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-1"
+              className="text-sm font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
               }}
             >
-              Emotional Grounding Tools
+              Emotional Tools
             </h3>
             <p 
-              className="text-base max-w-xs"
+              className="text-xs px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
               }}
             >
-              Support for anxiety, mood shifts, and the identity changes of early motherhood.
+              Support for anxiety and identity changes.
             </p>
           </div>
 
@@ -134,28 +134,28 @@ const DiscoverSection = () => {
           >
             <div className="mb-2">
               <Shield 
-                className="w-12 h-12" 
+                className="w-10 h-10" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-1"
+              className="text-sm font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
               }}
             >
-              Confident Decision-Making
+              Confident Decisions
             </h3>
             <p 
-              className="text-base max-w-xs"
+              className="text-xs px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
               }}
             >
-              Clear explanations of testing, birth options, and red flags — without fear-based messaging.
+              Clear explanations of testing and birth options.
             </p>
           </div>
 
@@ -169,32 +169,32 @@ const DiscoverSection = () => {
             }`}
           >
             <div 
-              className="mb-2 w-12 h-12 rounded-xl flex items-center justify-center border-2"
+              className="mb-2 w-10 h-10 rounded-xl flex items-center justify-center border-2"
               style={{ borderColor: '#3d4a3a' }}
             >
               <CheckSquare 
-                className="w-6 h-6" 
+                className="w-5 h-5" 
                 style={{ color: '#3d4a3a' }}
                 strokeWidth={1.5}
               />
             </div>
             <h3 
-              className="text-lg font-medium mb-1"
+              className="text-sm font-semibold mb-1 px-2"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.15'
               }}
             >
-              Practical Preparation
+              Practical Prep
             </h3>
             <p 
-              className="text-base max-w-xs"
+              className="text-xs px-1"
               style={{ 
                 color: '#3d4a3a',
                 lineHeight: '1.2'
               }}
             >
-              What you truly need, how to prepare for labor, and when to call your provider.
+              What you truly need and how to prepare for labor.
             </p>
           </div>
         </div>
