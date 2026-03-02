@@ -73,7 +73,7 @@ const ReviewsSection = () => {
 
   return (
     <div 
-      className="w-full pt-0 pb-16 px-6"
+      className="w-full pt-0 pb-4 px-6"
       style={{ 
         backgroundColor: '#FFFFFF',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -200,7 +200,7 @@ const ReviewsSection = () => {
 
         {/* Support Email */}
         <p 
-          className="text-center text-sm mt-8"
+          className="text-center text-sm mt-4"
           style={{ 
             color: '#3d4a3a',
             opacity: 0.7,
