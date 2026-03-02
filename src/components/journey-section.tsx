@@ -140,17 +140,20 @@ const JourneySection = () => {
           }`}
         >
           <h3 
-            className="text-3xl font-light text-center mb-8"
-            style={{ color: '#3d4a3a' }}
+            className="text-3xl text-center mb-6 italic"
+            style={{ 
+              color: '#3d4a3a',
+              fontFamily: "'Playfair Display', serif"
+            }}
           >
             Inside the Guide
           </h3>
           
-          <div className="space-y-8">
+          <div className="space-y-4">
             {chapters.map((chapter, index) => (
-              <div key={index} className="border-b border-[#3d4a3a]/10 pb-6 last:border-0">
+              <div key={index} className="border-b border-[#3d4a3a]/10 pb-4 last:border-0">
                 <h4 
-                  className="text-lg font-medium mb-1"
+                  className="text-lg font-medium mb-0.5"
                   style={{ color: '#3d4a3a' }}
                 >
                   {chapter.title}
