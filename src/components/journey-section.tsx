@@ -161,10 +161,10 @@ const JourneySection = () => {
               }}
               onClick={() => {
                 // Placeholder for snippet functionality
-                console.log("Read Snippet clicked");
+                console.log("View Snippet clicked");
               }}
             >
-              Read Snippet
+              View Snippet
             </Button>
           </div>
         </div>
