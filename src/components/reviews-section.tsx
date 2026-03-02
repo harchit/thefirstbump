@@ -88,16 +88,9 @@ const ReviewsSection = () => {
         }`}
       >
         {/* This Guide Helps You Section */}
-        <div 
-          className="mb-16 p-8 rounded-3xl" 
-          style={{ 
-            backgroundColor: '#E8E6DC',
-            fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
-            letterSpacing: '-0.02em'
-          }}
-        >
+        <div className="mb-16 p-8 rounded-3xl" style={{ backgroundColor: '#E8E6DC' }}>
           <h3 
-            className="text-2xl font-bold mb-6 text-center"
+            className="text-2xl font-light mb-6 text-center"
             style={{ color: '#3d4a3a', lineHeight: '1.2' }}
           >
             This Guide Helps You:
@@ -111,8 +104,8 @@ const ReviewsSection = () => {
               "Prepare mentally for labor"
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3" style={{ color: '#3d4a3a' }}>
-                <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#2D3A2B] stroke-[3]" />
-                <p className="text-base font-bold leading-tight">{item}</p>
+                <Check className="w-5 h-5 mt-0.5 flex-shrink-0 text-[#2D3A2B]" />
+                <p className="text-base font-light leading-tight">{item}</p>
               </div>
             ))}
           </div>
