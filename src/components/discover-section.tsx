@@ -48,7 +48,7 @@ const DiscoverSection = () => {
 
         {/* Feature Items - Grid Layout */}
         <div className="grid grid-cols-2 gap-x-4 gap-y-10 mb-12">
-          {/* Feature 1 - Calm Confidence */}
+          {/* Feature 1 - Trimester-by-Trimester Clarity */}
           <div 
             ref={feature1.ref}
             className={`flex flex-col items-center text-center transition-all duration-700 ease-out ${
@@ -71,7 +71,7 @@ const DiscoverSection = () => {
                 lineHeight: '1.15'
               }}
             >
-              Calm Confidence
+              Trimester Clarity
             </h3>
             <p 
               className="text-sm px-1"
