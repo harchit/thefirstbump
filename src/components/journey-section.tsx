@@ -132,14 +132,11 @@ const JourneySection = () => {
             Inside the Guide
           </h3>
           
-          <div className="space-y-3 mb-8">
+          <div className="space-y-4 mb-4">
             {chapters.map((chapter, index) => (
-              <div 
-                key={index} 
-                className="border border-[#3d4a3a]/10 rounded-2xl p-4"
-              >
+              <div key={index} className="border-b border-[#3d4a3a]/10 pb-4 last:border-0">
                 <h4 
-                  className="text-sm sm:text-base font-medium mb-1"
+                  className="text-sm sm:text-base font-medium mb-0.5"
                   style={{ color: '#3d4a3a' }}
                 >
                   {chapter.title}
