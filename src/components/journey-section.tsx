@@ -18,7 +18,7 @@ const chapters = [
   },
   {
     title: "Chapter 2: The First Trimester – Survival Mode",
-    description: "Navigate fatigue, fear, and uncertainty with calm clarity."
+    description: "Navigate fatigue, fear, and uncertainty calmly"
   },
   {
     title: "Chapter 3: Pregnancy & Your Mental Landscape",
