@@ -68,6 +68,12 @@ const JourneySection = () => {
   const heroCard = useFadeInOnScroll(0.1, 0);
   const tocSection = useFadeInOnScroll(0.1, 150);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPdf, setSelectedPdf] = useState("");
+
+  const openModalWithPdf = (pdfUrl: string) => {
+    setSelectedPdf(pdfUrl);
+    setIsModalOpen(true);
+  };
 
   return (
     <>
@@ -155,23 +161,33 @@ const JourneySection = () => {
               ))}
             </div>
 
-            {/* Read Snippet Button */}
-            <div className="flex justify-center">
+            {/* Read Snippet Buttons */}
+            <div className="flex justify-center gap-4">
               <Button
-                className="font-semibold px-8 py-2 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105 border border-black"
+                className="font-semibold px-6 py-2 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105 border border-black"
                 style={{
                   backgroundColor: '#ffffff',
                   color: '#2d2418'
                 }}
-                onClick={() => setIsModalOpen(true)}
+                onClick={() => openModalWithPdf('/snippet1.pdf')}
               >
-                View Snippet
+                View Snippet 1
+              </Button>
+              <Button
+                className="font-semibold px-6 py-2 rounded-full text-base shadow-lg transition-all duration-300 hover:scale-105 border border-black"
+                style={{
+                  backgroundColor: '#ffffff',
+                  color: '#2d2418'
+                }}
+                onClick={() => openModalWithPdf('/snippet2.pdf')}
+              >
+                View Snippet 2
               </Button>
             </div>
           </div>
         </div>
       </div>
-      <SnippetModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      <SnippetModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} pdfUrl={selectedPdf} />
     </>
   );
 };

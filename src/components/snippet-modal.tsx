@@ -6,9 +6,10 @@ import { Button } from "@/components/ui/button";
 interface SnippetModalProps {
   isOpen: boolean;
   onClose: () => void;
+  pdfUrl: string;
 }
 
-const SnippetModal = ({ isOpen, onClose }: SnippetModalProps) => {
+const SnippetModal = ({ isOpen, onClose, pdfUrl }: SnippetModalProps) => {
   if (!isOpen) return null;
 
   const stripeUrl = 'https://buy.stripe.com/8x2bJ14sa4YFgrI0i4gnK0d';
@@ -21,7 +22,7 @@ const SnippetModal = ({ isOpen, onClose }: SnippetModalProps) => {
         </DialogHeader>
         <div className="flex-grow p-2 bg-gray-100">
           <iframe
-            src="/snippet1.pdf"
+            src={pdfUrl}
             className="w-full h-full border-0"
             title="Snippet Preview"
           />
