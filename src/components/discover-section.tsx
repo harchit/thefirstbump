@@ -12,7 +12,7 @@ const DiscoverSection = () => {
 
   return (
     <div 
-      className="w-full pt-6 pb-12 px-6"
+      className="w-full pt-6 pb-6 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #DBE2CC 0%, #EAEEE1 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -226,7 +226,7 @@ const DiscoverSection = () => {
             className="text-sm mt-2 italic"
             style={{ color: '#3d4a3a' }}
           >
-            Limited time offer
+            Offer Ends March 5th
           </p>
         </div>
       </div>
