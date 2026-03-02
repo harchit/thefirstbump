@@ -22,7 +22,7 @@ const SnippetModal = ({ isOpen, onClose, pdfUrl }: SnippetModalProps) => {
         </DialogHeader>
         <div className="flex-grow p-2 bg-gray-100">
           <iframe
-            src={`${pdfUrl}#view=Fit`}
+            src={`${pdfUrl}#zoom=50`}
             className="w-full h-full border-0"
             title="Snippet Preview"
           />
