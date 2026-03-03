@@ -81,6 +81,7 @@ const SnippetModal = ({ isOpen, onClose, imageSrc }: SnippetModalProps) => {
               style={{ backgroundColor: '#2d3a2b' }}
               onClick={() => {
                 if (window.fbq) window.fbq('track', 'InitiateCheckout');
+                if (window.ttq) window.ttq.track('InitiateCheckout');
                 window.location.href = 'https://buy.stripe.com/8x2bJ14sa4YFgrI0i4gnK0d';
               }}
             >
