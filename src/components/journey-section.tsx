@@ -1,7 +1,9 @@
 "use client";
 
-import { Check } from "lucide-react";
+import { useState } from "react";
+import { Check, Eye } from "lucide-react";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
+import SnippetModal from "./SnippetModal";
 
 declare global {
   interface Window {
@@ -64,10 +66,18 @@ const chapters = [
 const JourneySection = () => {
   const heroCard = useFadeInOnScroll(0.1, 0);
   const tocSection = useFadeInOnScroll(0.1, 150);
+  
+  const [modalOpen, setModalOpen] = useState(false);
+  const [activeSnippet, setActiveSnippet] = useState("");
+
+  const openSnippet = (src: string) => {
+    setActiveSnippet(src);
+    setModalOpen(true);
+  };
 
   return (
     <div 
-      className="w-full pt-0 pb-6 px-6"
+      className="w-full pt-0 pb-12 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -76,7 +86,7 @@ const JourneySection = () => {
         lineHeight: '1.4'
       }}
     >
-      <div className="max-w-md mx-auto space-y-8">
+      <div className="max-w-md mx-auto space-y-10">
         {/* Who This is For Card */}
         <div 
           ref={heroCard.ref}
@@ -110,6 +120,24 @@ const JourneySection = () => {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Snippet Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <button 
+            onClick={() => openSnippet("/snippet1.png")}
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+          >
+            <Eye className="w-4 h-4" />
+            View Snippet 1
+          </button>
+          <button 
+            onClick={() => openSnippet("/snippet2.png")}
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+          >
+            <Eye className="w-4 h-4" />
+            View Snippet 2
+          </button>
         </div>
 
         {/* Table of Contents Section */}
@@ -151,6 +179,12 @@ const JourneySection = () => {
           </div>
         </div>
       </div>
+
+      <SnippetModal 
+        isOpen={modalOpen} 
+        onClose={() => setModalOpen(false)} 
+        imageSrc={activeSnippet} 
+      />
     </div>
   );
 };
