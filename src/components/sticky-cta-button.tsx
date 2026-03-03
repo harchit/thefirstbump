@@ -12,10 +12,10 @@ declare global {
 
 const StickyCtaButton = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show button after scrolling 100px
       if (window.scrollY > 100) {
         setIsVisible(true);
       } else {
@@ -23,14 +23,23 @@ const StickyCtaButton = () => {
       }
     };
 
+    const handleModalToggle = (e: any) => {
+      setIsModalOpen(e.detail.isOpen);
+    };
+
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("modal-toggle", handleModalToggle);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("modal-toggle", handleModalToggle);
+    };
   }, []);
 
   return (
     <div
       className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ${
-        isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"
+        isVisible && !isModalOpen ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0 pointer-events-none"
       }`}
     >
       <Button

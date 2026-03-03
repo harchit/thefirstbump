@@ -13,8 +13,10 @@ const SnippetModal = ({ isOpen, onClose, imageSrc }: SnippetModalProps) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      window.dispatchEvent(new CustomEvent('modal-toggle', { detail: { isOpen: true } }));
     } else {
       document.body.style.overflow = 'unset';
+      window.dispatchEvent(new CustomEvent('modal-toggle', { detail: { isOpen: false } }));
     }
     
     const handleEsc = (e: KeyboardEvent) => {
@@ -80,6 +82,10 @@ const SnippetModal = ({ isOpen, onClose, imageSrc }: SnippetModalProps) => {
             <button 
               className="w-full sm:w-auto px-8 py-4 rounded-full text-white font-semibold text-lg transition-transform active:scale-95 shadow-lg"
               style={{ backgroundColor: '#2d3a2b' }}
+              onClick={() => {
+                if (window.fbq) window.fbq('track', 'InitiateCheckout');
+                window.location.href = 'https://buy.stripe.com/8x2bJ14sa4YFgrI0i4gnK0d';
+              }}
             >
               Get My Digital Copy
             </button>
