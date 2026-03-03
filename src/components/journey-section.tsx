@@ -160,22 +160,38 @@ const JourneySection = () => {
             ))}
           </div>
 
-          {/* Snippet Buttons */}
-          <div className="flex flex-row gap-3 justify-center items-center">
-            <button 
-              onClick={() => openSnippet("/snippet1.png")}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] text-sm font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+          {/* Snippet Buttons Section */}
+          <div className="space-y-4 text-center">
+            <p 
+              className="text-sm sm:text-base font-medium"
+              style={{ color: '#3d4a3a' }}
             >
-              <Eye className="w-4 h-4" />
-              Snippet 1
-            </button>
-            <button 
-              onClick={() => openSnippet("/snippet2.png")}
-              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] text-sm font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+              Designed to give you clarity in one weekend
+            </p>
+            
+            <div className="flex flex-row gap-3 justify-center items-center">
+              <button 
+                onClick={() => openSnippet("/snippet1.png")}
+                className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] text-sm font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+              >
+                <Eye className="w-4 h-4" />
+                Snippet 1
+              </button>
+              <button 
+                onClick={() => openSnippet("/snippet2.png")}
+                className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] text-sm font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+              >
+                <Eye className="w-4 h-4" />
+                Snippet 2
+              </button>
+            </div>
+
+            <p 
+              className="text-xs sm:text-sm italic opacity-70"
+              style={{ color: '#3d4a3a' }}
             >
-              <Eye className="w-4 h-4" />
-              Snippet 2
-            </button>
+              140 pages, 3 hours of read time
+            </p>
           </div>
         </div>
       </div>
