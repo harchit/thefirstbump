@@ -73,7 +73,7 @@ const ReviewsSection = () => {
 
   return (
     <div 
-      className="w-full pt-0 pb-4 px-6"
+      className="w-full pt-12 pb-4 px-6"
       style={{ 
         backgroundColor: '#FFFFFF',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -88,14 +88,14 @@ const ReviewsSection = () => {
         }`}
       >
         {/* The Guide Helps Moms Section */}
-        <div className="mb-12 p-6 rounded-3xl max-w-sm mx-auto" style={{ backgroundColor: '#E8E6DC' }}>
+        <div className="mb-12 p-6 rounded-3xl max-w-md mx-auto" style={{ backgroundColor: '#E8E6DC' }}>
           <h3 
             className="text-2xl font-semibold mb-4 text-center"
             style={{ color: '#3d4a3a', lineHeight: '1.1' }}
           >
             Walk Away With:
           </h3>
-          <div className="space-y-2 max-w-[300px] mx-auto">
+          <div className="space-y-3 w-full">
             {[
               "Knowing exactly what’s normal vs when to call your provider",
               "Feeling confident making every pregnancy decision",
