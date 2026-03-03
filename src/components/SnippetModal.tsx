@@ -53,7 +53,7 @@ const SnippetModal = ({ isOpen, onClose, imageSrc }: SnippetModalProps) => {
 
         <div className="p-6 sm:p-8">
           {/* Image Preview */}
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-4">
             <img 
               src={imageSrc} 
               alt="Ebook Snippet" 
@@ -61,9 +61,6 @@ const SnippetModal = ({ isOpen, onClose, imageSrc }: SnippetModalProps) => {
               style={{ maxWidth: '100%' }}
             />
           </div>
-
-          {/* Divider */}
-          <div className="h-px bg-[#3d4a3a]/10 w-full mb-8" />
 
           {/* CTA Section */}
           <div className="text-center space-y-4 pb-4">
