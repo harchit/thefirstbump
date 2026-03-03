@@ -12,51 +12,51 @@ declare global {
 
 const chapters = [
   {
-    title: "Chapter 1: The Biology & The Immediate Pivot",
+    title: "1: The Biology & The Immediate Pivot",
     description: "Understand what’s happening in your body — and how to adjust without overwhelm."
   },
   {
-    title: "Chapter 2: The First Trimester – Survival Mode",
+    title: "2: The First Trimester – Survival Mode",
     description: "Navigate fatigue, fear, and uncertainty calmly"
   },
   {
-    title: "Chapter 3: Pregnancy & Your Mental Landscape",
+    title: "3: Pregnancy & Your Mental Landscape",
     description: "Make sense of anxiety, identity shifts, and emotional changes."
   },
   {
-    title: "Chapter 4: The Physical Shift (Second Trimester)",
+    title: "4: The Physical Shift (Second Trimester)",
     description: "Know what’s normal as your body changes — and what’s not."
   },
   {
-    title: "Chapter 5: Testing Without Spiraling",
+    title: "5: Testing Without Spiraling",
     description: "Understand screenings, make decisions confidently"
   },
   {
-    title: "Chapter 6: Physical Endurance (Third Trimester)",
+    title: "6: Physical Endurance (Third Trimester)",
     description: "Manage discomfort and recognize true labor signs."
   },
   {
-    title: "Chapter 7: Preparing for Birth",
+    title: "7: Preparing for Birth",
     description: "Build flexible birth preferences and mental readiness."
   },
   {
-    title: "Chapter 8: Practical Preparation",
+    title: "8: Practical Preparation",
     description: "Get ready without overbuying or overthinking"
   },
   {
-    title: "Chapter 9: What Labor Actually Looks Like",
+    title: "9: What Labor Actually Looks Like",
     description: "Know what to expect so birth feels less unknown."
   },
   {
-    title: "Chapter 10: “Is This Normal?”",
+    title: "10: “Is This Normal?”",
     description: "Clarity on symptoms, moods, & body changes"
   },
   {
-    title: "Chapter 11: Myth-Busting for Modern Mothers",
+    title: "11: Myth-Busting for Modern Mothers",
     description: "Cut through outdated advice and internet noise."
   },
   {
-    title: "Chapter 12: For Partners",
+    title: "12: For Partners",
     description: "Help your partner show up with confidence and support."
   }
 ];
