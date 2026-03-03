@@ -73,7 +73,7 @@ const ReviewsSection = () => {
 
   return (
     <div 
-      className="w-full pt-12 pb-4 px-6"
+      className="w-full pt-4 pb-4 px-6"
       style={{ 
         backgroundColor: '#FFFFFF',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
