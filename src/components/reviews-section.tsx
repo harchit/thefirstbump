@@ -93,14 +93,14 @@ const ReviewsSection = () => {
             className="text-2xl font-semibold mb-4 text-center"
             style={{ color: '#3d4a3a', lineHeight: '1.1' }}
           >
-            This Guide Helps You:
+            The Guide Helps Moms:
           </h3>
           <div className="space-y-2 max-w-[300px] mx-auto">
             {[
-              "Know what’s normal vs when to call your provider",
+              "Know what’s normal vs when to call their provider",
               "Reduce anxiety-driven Googling",
               "Feel confident making pregnancy decisions",
-              "Understand your changing body",
+              "Understand their changing body",
               "Prepare mentally for labor"
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3" style={{ color: '#3d4a3a' }}>
