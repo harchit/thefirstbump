@@ -90,7 +90,7 @@ const JourneySection = () => {
         {/* Who This is For Card */}
         <div 
           ref={heroCard.ref}
-          className={`rounded-3xl p-8 max-w-sm mx-auto transition-all duration-700 ease-out ${
+          className={`rounded-3xl p-6 max-w-md mx-auto transition-all duration-700 ease-out ${
             heroCard.isVisible 
               ? 'opacity-100 translate-y-0' 
               : 'opacity-0 translate-y-8'
@@ -108,7 +108,7 @@ const JourneySection = () => {
           >
             Who This is For
           </h2>
-          <div className="space-y-4 max-w-[280px] mx-auto">
+          <div className="space-y-3 w-full mx-auto">
             {[
               "You’re a first-time mom who wants pregnancy clarity",
               "You feel overwhelmed by conflicting advice",
