@@ -77,7 +77,7 @@ const JourneySection = () => {
 
   return (
     <div 
-      className="w-full pt-0 pb-12 px-6"
+      className="w-full pt-0 pb-4 px-6"
       style={{ 
         background: 'linear-gradient(180deg, #EAEEE1 0%, #FFFFFF 100%)',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
@@ -160,7 +160,7 @@ const JourneySection = () => {
             ))}
           </div>
 
-          {/* Snippet Buttons - Now moved here */}
+          {/* Snippet Buttons */}
           <div className="flex flex-row gap-3 justify-center items-center">
             <button 
               onClick={() => openSnippet("/snippet1.png")}
