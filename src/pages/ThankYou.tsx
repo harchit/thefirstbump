@@ -24,53 +24,57 @@ const ThankYou = () => {
     }, 100);
 
     const trackPurchase = async () => {
-      // Get Stripe Session ID from URL
       const searchParams = new URLSearchParams(window.location.search);
       const sessionId = searchParams.get('session_id');
 
-      // Meta Pixel Deduplication Logic
-      if (sessionId) {
-        const storageKey = `fb_purchase_${sessionId}`;
-        const hasFired = localStorage.getItem(storageKey);
-
-        if (!hasFired) {
-          try {
-            // Fetch session details from backend
-            const response = await fetch(`/api/stripe-session?session_id=${sessionId}`);
-            
-            if (response.ok) {
-              const data = await response.json();
-              const amount = data.amount / 100; // Convert from cents
-              const currency = data.currency ? data.currency.toUpperCase() : 'USD';
-
-              // Fire Facebook Pixel Purchase event
-              if (typeof window !== 'undefined' && window.fbq) {
-                window.fbq('track', 'Purchase', {
-                  content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
-                  content_type: 'product',
-                  currency: currency,
-                  value: amount
-                }, { eventID: sessionId });
-                
-                // Mark as fired in localStorage to prevent duplicates
-                localStorage.setItem(storageKey, 'true');
-              }
-            }
-          } catch (error) {
-            console.error("Error tracking purchase:", error);
-          }
-        }
+      if (!sessionId) {
+        console.warn("No session_id found for purchase tracking.");
+        return;
       }
 
-      // Fire TikTok Pixel Purchase event on page load
-      // Keeping this independent as per current requirements
-      if (typeof window !== 'undefined' && window.ttq) {
-        window.ttq.track('CompletePayment', {
-          content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
-          content_type: 'product',
-          currency: 'USD',
-          value: 16.99
-        });
+      const fbStorageKey = `fb_purchase_${sessionId}`;
+      const ttStorageKey = `tt_purchase_${sessionId}`;
+      const fbHasFired = localStorage.getItem(fbStorageKey);
+      const ttHasFired = localStorage.getItem(ttStorageKey);
+
+      if (fbHasFired && ttHasFired) {
+        return;
+      }
+
+      try {
+        const response = await fetch(`/api/stripe-session?session_id=${sessionId}`);
+        
+        if (response.ok) {
+          const data = await response.json();
+          const amount = data.amount / 100;
+          const currency = data.currency ? data.currency.toUpperCase() : 'USD';
+
+          // Fire Facebook Pixel Purchase event if it hasn't fired yet
+          if (!fbHasFired && typeof window !== 'undefined' && window.fbq) {
+            window.fbq('track', 'Purchase', {
+              content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+              content_type: 'product',
+              currency: currency,
+              value: amount
+            }, { eventID: sessionId });
+            
+            localStorage.setItem(fbStorageKey, 'true');
+          }
+
+          // Fire TikTok Pixel Purchase event if it hasn't fired yet
+          if (!ttHasFired && typeof window !== 'undefined' && window.ttq) {
+            window.ttq.track('CompletePayment', {
+              content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+              content_type: 'product',
+              currency: currency,
+              value: amount
+            });
+            
+            localStorage.setItem(ttStorageKey, 'true');
+          }
+        }
+      } catch (error) {
+        console.error("Error tracking purchase:", error);
       }
     };
 
