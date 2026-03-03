@@ -122,7 +122,7 @@ const JourneySection = () => {
           }`}
         >
           <h3 
-            className="text-3xl text-center mb-6 italic"
+            className="text-4xl text-center mb-6 italic"
             style={{ 
               color: '#3d4a3a',
               fontFamily: "'Playfair Display', serif"
