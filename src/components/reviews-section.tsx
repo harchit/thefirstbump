@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
@@ -68,6 +68,21 @@ const ReviewsSection = () => {
       setIsAnimating(false);
     }, 300);
   };
+
+  // Auto-scroll logic
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+    
+    if (sectionFade.isVisible && !isAnimating) {
+      interval = setInterval(() => {
+        goToNext();
+      }, 3500);
+    }
+
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [sectionFade.isVisible, isAnimating, currentIndex]);
 
   const currentReview = reviews[currentIndex];
 
