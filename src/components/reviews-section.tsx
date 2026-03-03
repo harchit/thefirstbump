@@ -7,6 +7,12 @@ import { useFadeInOnScroll } from "@/hooks/use-fade-in-on-scroll";
 
 const reviews = [
   {
+    text: "Pretty organized and easy to reference. The red flag sections were really helpful.",
+    author: "Hannah T., 36",
+    bgColor: "#2D3A2B",
+    textColor: "#ffffff"
+  },
+  {
     text: "Actually felt informed and not anxious. Stopped googling every small question I had",
     author: "Emily R., 29",
     bgColor: "#2D3A2B",
@@ -29,12 +35,6 @@ const reviews = [
     author: "Priya S., 27",
     bgColor: "#E8E6DC",
     textColor: "#3d4a3a"
-  },
-  {
-    text: "Pretty organized and easy to reference. The red flag sections were really helpful.",
-    author: "Hannah T., 36",
-    bgColor: "#2D3A2B",
-    textColor: "#ffffff"
   }
 ];
 
