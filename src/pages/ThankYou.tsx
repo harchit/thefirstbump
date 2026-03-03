@@ -23,7 +23,7 @@ const ThankYou = () => {
       setIsLoaded(true);
     }, 100);
 
-    const trackPurchase = async () => {
+    const trackPurchase = () => {
       const searchParams = new URLSearchParams(window.location.search);
       const sessionId = searchParams.get('session_id');
 
@@ -37,44 +37,31 @@ const ThankYou = () => {
       const fbHasFired = localStorage.getItem(fbStorageKey);
       const ttHasFired = localStorage.getItem(ttStorageKey);
 
-      if (fbHasFired && ttHasFired) {
-        return;
+      const amount = 16.99;
+      const currency = 'USD';
+
+      // Fire Facebook Pixel Purchase event if it hasn't fired yet
+      if (!fbHasFired && typeof window !== 'undefined' && window.fbq) {
+        window.fbq('track', 'Purchase', {
+          content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+          content_type: 'product',
+          currency: currency,
+          value: amount
+        }, { eventID: sessionId });
+        
+        localStorage.setItem(fbStorageKey, 'true');
       }
 
-      try {
-        const response = await fetch(`/api/stripe-session?session_id=${sessionId}`);
+      // Fire TikTok Pixel Purchase event if it hasn't fired yet
+      if (!ttHasFired && typeof window !== 'undefined' && window.ttq) {
+        window.ttq.track('CompletePayment', {
+          content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
+          content_type: 'product',
+          currency: currency,
+          value: amount
+        });
         
-        if (response.ok) {
-          const data = await response.json();
-          const amount = data.amount / 100;
-          const currency = data.currency ? data.currency.toUpperCase() : 'USD';
-
-          // Fire Facebook Pixel Purchase event if it hasn't fired yet
-          if (!fbHasFired && typeof window !== 'undefined' && window.fbq) {
-            window.fbq('track', 'Purchase', {
-              content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
-              content_type: 'product',
-              currency: currency,
-              value: amount
-            }, { eventID: sessionId });
-            
-            localStorage.setItem(fbStorageKey, 'true');
-          }
-
-          // Fire TikTok Pixel Purchase event if it hasn't fired yet
-          if (!ttHasFired && typeof window !== 'undefined' && window.ttq) {
-            window.ttq.track('CompletePayment', {
-              content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
-              content_type: 'product',
-              currency: currency,
-              value: amount
-            });
-            
-            localStorage.setItem(ttStorageKey, 'true');
-          }
-        }
-      } catch (error) {
-        console.error("Error tracking purchase:", error);
+        localStorage.setItem(ttStorageKey, 'true');
       }
     };
 
