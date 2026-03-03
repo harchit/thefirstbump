@@ -19,7 +19,7 @@ const chapters = [
   },
   {
     title: "2: The First Trimester – Survival Mode",
-    description: "Navigate fatigue, fear, and uncertainty calmly"
+    description: "Navigate fatigue, fee, and uncertainty calmly"
   },
   {
     title: "3: Pregnancy & Your Mental Landscape",
@@ -122,24 +122,6 @@ const JourneySection = () => {
           </div>
         </div>
 
-        {/* Snippet Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button 
-            onClick={() => openSnippet("/snippet1.png")}
-            className="flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
-          >
-            <Eye className="w-4 h-4" />
-            View Snippet 1
-          </button>
-          <button 
-            onClick={() => openSnippet("/snippet2.png")}
-            className="flex items-center gap-2 px-6 py-3 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
-          >
-            <Eye className="w-4 h-4" />
-            View Snippet 2
-          </button>
-        </div>
-
         {/* Table of Contents Section */}
         <div 
           ref={tocSection.ref}
@@ -159,7 +141,7 @@ const JourneySection = () => {
             Inside the Guide
           </h3>
           
-          <div className="space-y-3 mb-4">
+          <div className="space-y-3 mb-8">
             {chapters.map((chapter, index) => (
               <div key={index} className="border-b border-[#3d4a3a]/10 pb-3 last:border-0">
                 <h4 
@@ -176,6 +158,24 @@ const JourneySection = () => {
                 </p>
               </div>
             ))}
+          </div>
+
+          {/* Snippet Buttons - Now moved here */}
+          <div className="flex flex-row gap-3 justify-center items-center">
+            <button 
+              onClick={() => openSnippet("/snippet1.png")}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] text-sm font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+            >
+              <Eye className="w-4 h-4" />
+              Snippet 1
+            </button>
+            <button 
+              onClick={() => openSnippet("/snippet2.png")}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-[#3d4a3a]/20 text-[#3d4a3a] text-sm font-medium hover:bg-[#3d4a3a]/5 transition-colors shadow-sm"
+            >
+              <Eye className="w-4 h-4" />
+              Snippet 2
+            </button>
           </div>
         </div>
       </div>
