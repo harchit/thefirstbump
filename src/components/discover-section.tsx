@@ -209,17 +209,17 @@ const DiscoverSection = () => {
           }`}
         >
           <div className="flex items-center gap-3">
-            <span 
+            <span
               className="text-2xl line-through opacity-50"
               style={{ color: '#3d4a3a' }}
             >
-              $20.99
+              $11.99
             </span>
-            <span 
+            <span
               className="text-4xl font-bold"
               style={{ color: '#2d5a27' }}
             >
-              $16.99
+              $9.99
             </span>
           </div>
           <p 

@@ -37,7 +37,7 @@ const ThankYou = () => {
       const fbHasFired = localStorage.getItem(fbStorageKey);
       const ttHasFired = localStorage.getItem(ttStorageKey);
 
-      const amount = 16.99;
+      const amount = 9.99;
       const currency = 'USD';
 
       // Fire Facebook Pixel Purchase event if it hasn't fired yet
