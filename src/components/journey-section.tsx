@@ -71,6 +71,18 @@ const JourneySection = () => {
   const [activeSnippet, setActiveSnippet] = useState("");
 
   const openSnippet = (src: string) => {
+    if (window.fbq) {
+      window.fbq('track', 'ViewContent', {
+        content_name: 'Ebook Snippet',
+        content_type: 'product'
+      });
+    }
+    if (window.ttq) {
+      window.ttq.track('ViewContent', {
+        content_name: 'Ebook Snippet',
+        content_type: 'product'
+      });
+    }
     setActiveSnippet(src);
     setModalOpen(true);
   };
