@@ -134,7 +134,7 @@ const Index = () => {
                   window.ttq.track('InitiateCheckout');
                 }
                 setTimeout(() => {
-                  window.location.href = 'https://buy.stripe.com/8x2bJ14sa4YFgrI0i4gnK0d';
+                  window.location.href = 'https://buy.stripe.com/5kQ14n0bU62J5N49SEgnK0e';
                 }, 300);
               }}
             >
