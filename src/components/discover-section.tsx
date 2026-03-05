@@ -213,7 +213,7 @@ const DiscoverSection = () => {
               className="text-2xl line-through opacity-50"
               style={{ color: '#3d4a3a' }}
             >
-              $11.99
+              $14.99
             </span>
             <span
               className="text-4xl font-bold"
