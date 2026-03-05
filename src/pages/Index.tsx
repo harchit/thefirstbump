@@ -141,7 +141,7 @@ const Index = () => {
               Get Instant Access
             </Button>
             <p className="text-center text-[3.8vw] sm:text-[15px] mt-2 font-semibold" style={{ color: '#ffffff', opacity: 0.9 }}>
-              Limited Time Promo Ends March 5th
+              Limited Time Promo Ends March 8th
             </p>
           </div>
         </div>

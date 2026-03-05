@@ -222,11 +222,11 @@ const DiscoverSection = () => {
               $9.99
             </span>
           </div>
-          <p 
+          <p
             className="text-sm mt-2 italic"
             style={{ color: '#3d4a3a' }}
           >
-            Offer Ends March 5th
+            Offer Ends March 8th
           </p>
         </div>
       </div>
