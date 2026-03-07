@@ -140,9 +140,27 @@ const Index = () => {
             >
               Get Instant Access
             </Button>
-            <p className="text-center text-[3.8vw] sm:text-[15px] mt-2 font-semibold" style={{ color: '#ffffff', opacity: 0.9 }}>
-              Limited Time Promo Ends March 8th
-            </p>
+            
+            {/* Pricing Info */}
+            <div className="flex flex-col items-center mt-3">
+              <div className="flex items-center gap-3">
+                <span
+                  className="text-[5vw] sm:text-xl line-through opacity-60"
+                  style={{ color: '#ffffff' }}
+                >
+                  $14.99
+                </span>
+                <span
+                  className="text-[8vw] sm:text-3xl font-bold"
+                  style={{ color: '#FBFE87' }}
+                >
+                  $9.99
+                </span>
+              </div>
+              <p className="text-center text-[3.5vw] sm:text-[14px] mt-1 font-medium italic" style={{ color: '#ffffff', opacity: 0.9 }}>
+                Offer Ends March 8th
+              </p>
+            </div>
           </div>
         </div>
       </div>

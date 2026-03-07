@@ -45,8 +45,8 @@ const ThankYou = () => {
         window.fbq('track', 'Purchase', {
           content_name: 'The First Bump - A New Mom\'s Pregnancy Guide',
           content_type: 'product',
-          currency: currency,
-          value: amount
+          currency: 'CAD',
+          value: 13.59
         }, { eventID: sessionId });
         
         localStorage.setItem(fbStorageKey, 'true');

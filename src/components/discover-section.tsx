@@ -199,36 +199,6 @@ const DiscoverSection = () => {
           </div>
         </div>
 
-        {/* Price Section */}
-        <div 
-          ref={priceSection.ref}
-          className={`flex flex-col items-center text-center transition-all duration-700 ease-out ${
-            priceSection.isVisible 
-              ? 'opacity-100 translate-y-0' 
-              : 'opacity-0 translate-y-8'
-          }`}
-        >
-          <div className="flex items-center gap-3">
-            <span
-              className="text-2xl line-through opacity-50"
-              style={{ color: '#3d4a3a' }}
-            >
-              $14.99
-            </span>
-            <span
-              className="text-4xl font-bold"
-              style={{ color: '#2d5a27' }}
-            >
-              $9.99
-            </span>
-          </div>
-          <p
-            className="text-sm mt-2 italic"
-            style={{ color: '#3d4a3a' }}
-          >
-            Offer Ends March 8th
-          </p>
-        </div>
       </div>
     </div>
   );
