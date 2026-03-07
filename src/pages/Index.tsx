@@ -151,7 +151,7 @@ const Index = () => {
                   $14.99
                 </span>
                 <span
-                  className="text-[8vw] sm:text-3xl font-bold"
+                  className="text-[8vw] sm:text-3xl"
                   style={{ color: '#FBFE87' }}
                 >
                   $9.99
