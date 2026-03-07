@@ -145,14 +145,14 @@ const Index = () => {
             <div className="flex flex-col items-center mt-3">
               <div className="flex items-center gap-3">
                 <span
-                  className="text-[5vw] sm:text-xl line-through opacity-60"
-                  style={{ color: '#ffffff' }}
+                  className="text-[5vw] sm:text-xl line-through opacity-80"
+                  style={{ color: '#ff4d4d' }}
                 >
                   $14.99
                 </span>
                 <span
                   className="text-[8vw] sm:text-3xl font-bold"
-                  style={{ color: '#FBFE87' }}
+                  style={{ color: '#4ade80' }}
                 >
                   $9.99
                 </span>
